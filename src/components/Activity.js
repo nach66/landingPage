@@ -1,19 +1,18 @@
 import React from 'react'
-import def from '../images/def.jpg';
 import PropTypes from 'prop-types';
-  
+import {FaUtensils,FaAngellist, FaMapMarked, FaRegSmileBeam} from 'react-icons/fa';
+
 export default function Activity({activity}) {
-    const {name,image,description} = activity;
-    console.log(description.content[0].content[0].value);
+    const {icon,title} = activity;
         return (
             <article className="activity">
                 <div className="img-container-activity">
-                    <img src={image || def} alt="act"/>
+                    <img src={icon} alt="act"/>
                     <div className="img__description">
-                        <p>{description.content[0].content[0].value}</p>                     
+                        <p>{title}</p>                     
                     </div>
                 </div> 
-                <p className="activity-name">{name}</p>   
+                <p className="activity-name">name</p>   
             </article>
         );
     }
