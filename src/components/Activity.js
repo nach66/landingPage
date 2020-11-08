@@ -1,19 +1,23 @@
 import React from 'react'
 import PropTypes from 'prop-types';
-import {FaUtensils,FaAngellist, FaMapMarked, FaRegSmileBeam} from 'react-icons/fa';
+import a from '../images/כותרת/b1.jpg'
+import b from '../images/כותרת/b2.jpg'
+import c from '../images/כותרת/b3.jpg'
+import d from '../images/כותרת/b4.jpg'
 
 export default function Activity({activity}) {
-    const {icon,title} = activity;
+    const {icon,title,description} = activity;
         return (
+            <>
             <article className="activity">
                 <div className="img-container-activity">
                     <img src={icon} alt="act"/>
-                    <div className="img__description">
-                        <p>{title}</p>                     
-                    </div>
+                    <div className="img__description"/>
                 </div> 
-                <p className="activity-name">name</p>   
+                <p className="activity-name">{title}</p>   
             </article>
+            <p>{description}</p>  
+            </>                   
         );
     }
     

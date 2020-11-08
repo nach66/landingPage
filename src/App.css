@@ -6,18 +6,15 @@
   box-sizing: border-box;
 }
 :root {
-  --myblue: #050a5c;
-  --lightblue: rgb(154, 189, 189);
-  --primaryColor: rgb(236, 184, 14);
+  --myblue: #073b4c;
+  --blue: #118ab2;
+  --lightblue: #06d6a0;
+  --primaryColor: #ffd166;
+  --mainRed: #ef476f;
   --mainWhite: #fff;
-  --offWhite:rgba(154, 189, 189, 0.432);
   --mainBlack: #222;
-  --mainGrey: #ececec;
-  --darkGrey: rgb(126, 145, 145);
-  --mainGreen: rgba(70, 155, 37, 0.788);
-
-  --mainTransition: all 0.3s linear;
   --mainSpacing: 3px;
+  --mainTransition: all 0.3s linear;
   --lightShadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.5);
   --darkShadow: 4px 10px 5px 0px rgba(0, 0, 0, 0.5);
 }
@@ -223,21 +220,18 @@ width: 7px;
 }
 
 /* services */
-.empty-services {
-  margin: auto;
-  width: 90vw;
+.blue-services {
   padding: 0.5rem;
-  text-align: center;
+  background:var(--myblue);
+  color: var(--primaryColor);
 }
 .services {
   margin: auto;
   margin-bottom: 15px;
-  width: 90vw;
   padding: 2rem;
   text-align: center;
-  border-radius: 10px;
-  background-color: var(--offWhite);
-  box-shadow: 0 0.4em 0em -0.3em var(--darkGrey) ;
+  color: var(--mainRed);
+  background-color: var(--primaryColor);
 }
 .services-center {
   width: 80vw;
@@ -454,8 +448,7 @@ h1 {
   margin-bottom: 0.5em;
 }
 h2 {
-  padding: 10px;
-  text-align: center;
+  line-height: 1;
   direction: rtl;
   font-size: 2em;
   margin-bottom: 0.75em;
@@ -537,7 +530,6 @@ div{
 .about h5 {
   letter-spacing: 2px;
   font-weight: 500;
-  text-align: right;
 }
 .about img{
   padding: 20px;
@@ -553,7 +545,7 @@ div{
   .about {
     grid-row-gap: 2rem;
     grid-column-gap: 10px;
-    grid-template-columns: 2fr 4fr;
+    grid-template-columns: 4fr 2fr;
   }
   .about h5 {
     width: 700px;
@@ -602,58 +594,79 @@ div{
 
 
 /*switch pictures hero*/
-.bg {
-  z-index: -1;
-  position: absolute;
-  top: 0px;
-  width: 100vw;
-  height: calc(80vh);
-  background: center/cover no-repeat;
-  will-change: opacity;
+.void{
+  height: calc(40vh);
 }
 .switch{
-  display: flex;
+  top: 0px;
+  width: 100vw;
+  height: calc(75vh);
+  position: absolute;
+  background: center;
 }
 
 /* Banner */
 .banner {
-  margin: auto;
-  margin-top: 7vh;
-  margin-bottom: 27vh;
-
-  align-items: center;
-  text-align: center;
-
-  color: var(--mainWhite);
-  background: rgba(0, 0, 0, 0.507);
-  letter-spacing: var(--mainSpacing);
+  top: 20px;
+  left: 100px;
+  position: absolute;
+  width: 500px;
+  padding: 50px;
+  height: calc(60vh);
+  border-radius: 30%;
+  color: var(--mainRed);
+  background: var(--lightblue);
+  box-shadow: var(--lightShadow);
+}
+.dream1 {
+  top: 80px;
+  left: 255px;
+  position: absolute;
+  width: 50px;
+  height: calc(8vh);
+  border-radius: 40%;
+  background: var(--lightblue);
+  box-shadow: var(--lightShadow);
+}
+.dream2 {
+  top: 100px;
+  left: 330px;
+  position: absolute;
+  width: 30px;
+  height: calc(4vh);
+  border-radius: 44%;
+  background: var(--lightblue);
+  box-shadow: var(--lightShadow);
 }
 .banner h1 {
-  font-size: 1.5rem;
-}
-.banner p {
-  font-size: 1rem;
-}
-.banner div {
-  width: 2rem;
-  height: 3px;
-  margin: 1.5rem auto;
-  background-color: var(--primaryColor);
+  font-size: 5rem;
+  text-align: center;
+  letter-spacing: 7px;
+  line-height: 1;
 }
 /*end of Banner */
-  @media screen and (max-width: 800px) {
-  .banner {
-    padding: 0.5rem 1rem;
+  @media screen and (max-width: 1000px) {
+    .banner h1 {
+      font-size: 2rem;
     }
-  .banner p {
-      font-size: 0.9rem;
-      margin-bottom: 5px;
-  }
-  .bg {
-    top:0px;
-    height: calc(360.5px);
-  }
+    .banner{
+      top: 10px;
+      left: 170px;
+      width: 200px;
+      height: 55%;
+      padding: 20px;
+    }
+    .switch {
+      height: calc(50vh);
+    }
 }
+@media screen and (max-width: 700px) {
+  .banner{
+    left: 35px;
+    padding: 20px;
+  }}
+
+
 
 /* Title */
 .section-title {
@@ -667,10 +680,12 @@ div{
   margin-bottom: 1rem;
 }
 .section-title div {
-  width: 6rem;
-  height: 3px;
+  width:7rem;
+  height: 33px;
   margin: 0 auto;
-  background: var(--primaryColor);
+  background: url();
+  background-image: url("./images/icons/sep.png");
+  background-size: cover;
 }
 /* end of Title */
 
