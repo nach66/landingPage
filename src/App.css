@@ -1,9 +1,7 @@
 * {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 
-  Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family:'Lucida Sans Unicode', sans-serif;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 :root {
   --myblue: #073b4c;
@@ -19,7 +17,198 @@
   --darkShadow: 4px 10px 5px 0px rgba(0, 0, 0, 0.5);
 }
 
+/*hero*/
+.void{
+  height: calc(75vh);
+}
+.pic{
+  width: 100vw;
+  height: calc(75vh);
+  background: url("./images/כותרת/freedom.jpg");
+  background-size: cover;
+  background-position: center;
+}
+/* Banner */
+.banner h1 {
+  font-size: 5rem;
+  font-family:  'Gill Sans MT',  sans-serif;
+  text-align: center;
+  letter-spacing: 6px;
+}
+.banner {
+  position: absolute;
+  top: 30px;
+  left: 9vw;
+  width: 320px;
+  padding: 40px;
+  height: calc(45vh);
+  border-radius: 30%;
+  color: var(--mainRed);
+  background: var(--lightblue);
+  box-shadow: var(--lightShadow);
+}
+.dream1 {
+  top: 80px;
+  left: 47vw;
+  width: 130px;
+  height: calc(22vh);
+  position: absolute;
+  border-radius: 40%;
+  background: var(--lightblue);
+  box-shadow: var(--lightShadow);
+}
+.dream2 {
+  top: 115px;
+  left: 62vw;
+  width: 60px;
+  height: calc(10vh);
+  position: absolute;
+  border-radius: 40%;
+  background: var(--lightblue);
+  box-shadow: var(--lightShadow);
+}
+/*end of Banner */
+  @media screen and (max-width: 1100px) {
+    .pic, .void {
+      height: calc(50vh);
+    }
+    .banner h1 {
+      font-size: 2.5rem;
+    }
+    .banner{
+      top: 10px;
+      left: 7vw;
+      width: 22vw;
+      height: 20vh;
+      padding-top: 50px;
+    }
+    .dream1 {
+      top: 80px;
+      left: 42vw;
+      width: 90px;
+      height: calc(13vh);
+    }
+    .dream2 {
+      top: 110px;
+      left: 55vw;
+      width: 40px;
+      height: calc(6vh);
+    }
+}
+@media screen and (max-width: 800px) {
+.banner{
+    top: 10px;
+    left: 2vw;
+    width: 28vw;
+    height: 120px;
+    padding: 20px;
+  }
+  .dream1 {
+    top: 86px;
+    left: 40vw;
+    width: 9vw;
+    height: 7vh;
+  }
+  .dream2 {
+    top: 100px;
+    left: 52vw;
+    width: 30px;
+    height: calc(4vh);
+  }
+}
+@media screen and (max-width: 630px) {
+  .banner h1{
+    padding-top: 15px;
+    font-size: 1.8rem;
+  }
+}
 
+/* services */
+.blue-sec {
+  padding: 0.5rem;
+  background:var(--mainRed);
+  color: var(--myblue);
+  text-align: center;
+}
+.haki-sec {
+  padding: 2rem;
+  text-align: center;
+  color: var(--mainRed);
+  background-color: var(--primaryColor);
+}
+.sec {
+  padding: 2rem;
+  text-align: center;
+  background-color: var(--lightblue);
+  color: #fff;
+}
+
+/*2 columns, for about & contact*/
+.about { 
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.about h5 {
+  letter-spacing: 2px;
+  font-weight: 500;
+}
+.about img{
+  padding: 20px;
+  padding-top: 0.4rem;
+  height: 280px;
+  width: 290px;
+  border-radius: 50%;
+}
+@media screen and (min-width: 1050px) {
+  .about {
+    grid-row-gap: 2rem;
+    grid-column-gap: 10px;
+    grid-template-columns: 1fr 1fr;
+  }
+  .about h5 {
+    width: 700px;
+  }
+}
+/*end of about*/
+
+/*contact form*/
+.cform{
+  margin: auto;
+  width: 60vw;
+}
+.cform input{
+  margin-bottom: 2px;
+}
+@media screen and (max-width: 750px) {
+  .cform{
+    width: 80vw;
+    margin: auto;
+  }
+}
+
+
+
+
+/* Title */
+.section-title {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.section-title h4 {
+  font-size: 2rem;
+  letter-spacing: var(--mainSpacing);
+  text-transform: capitalize;
+  margin-bottom: 1rem;
+}
+.section-title div {
+  width:7rem;
+  height: 33px;
+  margin: 0 auto;
+  background-image: url("./images/icons/sep.png");
+  background-size: cover;
+}
+/* end of Title */
 
 /*popup*/
 @keyframes customEnterAnimation {
@@ -47,371 +236,6 @@
 }
 /*end of popup*/
 
-/*עיגול של מחיר באתר*/
-.best_price{
-  /* background-image: url("./images/icons/bestp.png"); */
-  background-size: cover;
-  position: relative;
-  height: 155px;
-  width: 155px;
-  right: 1.5rem;
-  margin-bottom: 2px;
-}
-.sbest_price{
-  /* background-image: url("./images/icons/bestp.png"); */
-  background-size: cover;
-  position: absolute;
-  height: 160px;
-  width: 165px;
-  top: 2px;
-  left: 38vw;
-  display: none;
-}
-/*עיגול של מחיר באתר*/
-
-/*search*/
-.comp{
-  background-color: var(--mainGreen);
-  display: flex;
-  width: 100%;
-}
-.book-now-comp{
-    position: relative;
-    padding-top: 17px;
-    height: 120px;
-    width: 70%;
-    display: grid; 
-    grid-column-gap: 1rem; 
-    grid-template-columns: 1.2fr 1.2fr 1.2fr 1.2fr 1.7fr;
-    margin-right: 240px;
-    margin-left: 20px;
-  }
-  .react-datepicker-wrapper{
-    width: 100%;
-    height: 35px;
-    border-radius: 2px;
-    padding-top: 23px;
-  }
-  .react-datepicker__input-container input {
-      width: 100%;
-      height: 45px;
-      padding: 4px;
-      padding-right: 5px;
-      border-radius: 2px;
-      border: 1px solid var(--primaryColor);
-      background-color: var(--mainWhite);
-      cursor: pointer;
-  }
-  .ppl{
-    width: 99%;
-    margin-right: 0.5%;
-    height: 45px;
-    border-radius: 2px;
-    border: 1px solid var(--primaryColor);
-    background-color: var(--mainWhite);
-    cursor: pointer;
-    margin-top: 23px;
-  }
-  .book{
-      width: 99%;
-      height: 45px;
-      letter-spacing: var(--mainSpacing);
-      color:  rgb(0, 88, 139);
-      background: var(--primaryColor);
-      padding: 0.4rem 0.9rem;
-      border: none;
-      transition: var(--mainTransition);
-      border-radius: 2px;
-      font-size: medium;
-      font-weight:600;
-      margin-right: 0.5%;
-      cursor: pointer;
-      margin-top: 23px;
-  }
-  .book:hover {
-  box-shadow: 0 0.1em 0.9em -0.4em var(--mainWhite) ;
-  transform: translateY(-0.03em);
-  }
-/*מסך קטן*/
-@media screen and (max-width: 800px) {
-  .best_price{
-    display: none;
-  }
-  .sbest_price{
-    display: flex;
-  }
-  .comp {
-    display: inline-block;
-  }
-  .book-now-comp{
-    display: inline-block;
-    padding: 10px;
-    padding-top: 75px;
-    margin: auto;
-    width: 100%;
-    height: 100%;
-    right: 0px;
-  }
-  .ppl{  
-    margin: 0.5vh;
-    width: 21.7vw;
-    margin-top: 2px;
-    height: 35px;
-  }
-  .react-datepicker-wrapper{
-    margin: 0.5vh;
-    width: 21.8vw;
-    padding-top: 0px;
-  }
-  .react-datepicker-wrapper input{
-    height: 35px;
-  }
-  .book{
-    margin-top: 0.5vh;
-    height: 35px;
-  }
-}
-@media screen and (max-width: 640px) {
-  .sbest_price{
-    left: 35.5vw;
-  }
-}
-/*מחשב*/
-@media screen and (max-width: 560px) {
-  .sbest_price{
-    left: 32vw;
-  }
-}
-/*הטלפון שלי*/
-@media screen and (max-width: 480px) {
-  .react-datepicker-wrapper{
-    width: 130px;
-  }.ppl{
-    width: 41%;
-  }
-  .sbest_price{
-    left: 29vw;
-  }
-}
-@media screen and (max-width: 380px) {
-  .react-datepicker-wrapper{
-    width: 110px;
-  }
-  .sbest_price{
-    left: 26vw;
-  }
-}
-/*end of search*/
-
-
-.languegus {
-  color: #ecb80e;
-  position: fixed;
-  top: 20px;
-  right: 48%;
-}
-.languegus input{
-width: 7px;
-}
-@media screen and (min-width: 1020px) {
-  .languegus {
-    left: 98%;
-  }
-}
-
-/* services */
-.blue-services {
-  padding: 0.5rem;
-  background:var(--myblue);
-  color: var(--primaryColor);
-}
-.services {
-  margin: auto;
-  margin-bottom: 15px;
-  padding: 2rem;
-  text-align: center;
-  color: var(--mainRed);
-  background-color: var(--primaryColor);
-}
-.services-center {
-  width: 80vw;
-  padding: 20px;
-  display: grid;
-  grid-row-gap: 2rem;
-  grid-column-gap: 5rem;  
-  grid-template-columns: 1fr 1fr;
-}
-.gallery-background {
-  margin: auto;
-  width: 90vw;
-  border-radius: 10px;
-  margin-bottom: 15px;
-  background-color: var(--offWhite);
-  box-shadow: 0 0.4em 0em -0.3em var(--darkGrey) ;}
-.gallery-services {
-  margin: auto;
-  margin-bottom: 15px;
-  width: 85vw;
-  padding: 1.2rem;
-}
-@media screen and (min-width: 940px) {
-  .services-center {
-    width: 90vw;
-    max-width: 1170px;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-  }.gallery-services {
-    width: 70vw;
-  }
-}
-
-.services article {
-  margin: auto;
-}
-/* אייקונים שירותים */
-.icon-services {
-  background-color: var(--offWhite);
-  color: var(--mainBlack);
-  padding: 0.5rem 0.5rem 0.1rem;
-  border-radius: 50%;
-  font-size: 1.4rem;
-}
-.h6-services {
-  font-weight: 600;  
-  font-size: 13px;
-  margin-top: 15px;
-  letter-spacing: 2px;
-}
-/*end of services */
-
-/* Navbar */
-.navbar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding: 0.2rem 0rem 0.1rem 0rem;
-  background: var(--mainWhite);
-  z-index: 1;
-}
-/*לוגו העוגן*/
-.nav-logo {
-  margin-top: 7px;
-  transition: var(--mainTransition);
-}
-  .nav-logo:hover,
-  .nav-logo:focus {
-    box-shadow: 0 0.5em 0.4em -0.4em #050a5c ;
-    transform: translateY(-0.1em);
-}
-
-/*** במסך קטן ***/
-
-/* כותרת*/
-.nav-header {
-  display: flex;
-  justify-content: space-between;
-}
-/* כפתור התפריט*/
-.nav-btn {
-  margin-left: 10px;
-  background: transparent;
-  border: 3px groove;
-  border-radius: 4px;
-  padding: 0.2rem;
-  cursor: pointer;
-  outline: none;
-}
-/*אייקון התפריט*/
-.nav-icon {
-  padding-top: 5px;
-  font-size: 2rem;
-  color:var(--myblue);
-}
-  /* עיצוב התפריט הנפתח */
-.nav-links {
-  z-index: 1;
-  text-align: center;
-  list-style-type: none;
-  overflow: hidden;
-  height: 100vh;
-  box-shadow: var(--lightShadow);
-  margin-top: 20vh;
-}
-  /*הכפתורים בתפריט*/
-.nav-links a {
-  z-index: 1;
-  color:var(--myblue);
-  font-weight: 600;
-  font-size: 1rem;
-  justify-content: center;  
-  text-decoration: none;
-  letter-spacing: var(--mainSpacing);
-  transition: var(--mainTransition);
-  cursor: pointer;
-  border-radius:7px;
-  padding: 3px 9px;
-  box-shadow: none;
-}
-.nav-links a:hover,
-.nav-links a:focus {
-  box-shadow: 0 0.5em 0.4em -0.4em #050a5c ;
-  transform: translateY(-0.25em);
-}
-
-/* תפריט קטן, כש0 הוא סגור*/
-.hide-nav {
-  height: 0px;
-  margin-top: 0px;
-}
-/*אייקון בין הכפתורי תפריט*/
-.anchor{
-  margin: 5px;
-  height: 14px;
-  width: 8px;
-}
-
-/*מסך גדול */
-@media screen and (min-width: 910px) {
-  /*אייקון בין הכפתורי תפריט*/
-.anchor{
-    height: 34px;
-    width: 22px;
-    margin: auto 3px;
-  }
-  .nav-btn {
-    /*מעלים אייקון תפריט קטן */
-    display: none;
-  }
-  /*עיצוב תפריט*/
-    .nav-center {
-    /* direction: rtl; */
-    display: flex;
-    width: 910px;
-    margin: auto;
-  }
-/*עיצוב גובה התפריט*/
-    .nav-links {
-    height: auto;
-    display: flex;
-    box-shadow: none;
-    margin-top: 5px;
-  }
-  /* כפתורי תפריט */
-  .nav-links a {
-    padding: 2px 12px;
-    width: 100px;
-    margin: 4px;
-  }
-  .nav-links a:hover,
-  .nav-links a:focus {
-    box-shadow: 0 0.5em 0.9em -0.4em #050a5c ;
-    transform: translateY(-0.25em);
-    color: aliceblue;
-    background-color: var(--primaryColor);
-  }
-}
-/* end of navbar */
-
 /* globals */
 .sep{
   width: 49%;
@@ -420,61 +244,43 @@ width: 7px;
   /* background-image: url("./images/icons/mirror.png"); */
   margin: 1rem auto;
 }
-.btn-primary2 {
-  display: inline-block;
-  text-decoration: none;
-  letter-spacing: var(--mainSpacing);
-  color: var(--mainBlack);
-  background: var(--primaryColor);
-  padding: 0.4rem 0.9rem;
-  border: 3px solid var(--primaryColor);
-  transition: var(--mainTransition);
-  cursor: pointer;
-}
-.btn-primary2:hover {
-  background: transparent;
-  color: var(--primaryColor);
-}
 body {
-  padding-top: 66px;
-  color: var(--mainBlack);
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif, Arial, Helvetica, sans-serif;
   line-height: 1.4;
 }
 h1 {
-  direction: rtl;
   font-size: 3em;
+  direction: rtl;
   line-height: 1;
   margin-bottom: 0.5em;
 }
 h2 {
+  font-size: 2em;
   line-height: 1;
   direction: rtl;
-  font-size: 2em;
-  margin-bottom: 0.75em;
+  margin-bottom: 0.5em;
 }
 h3 {
-  direction: rtl;
   font-size: 1.5em;
+  direction: rtl;
   line-height: 1;
-  margin-bottom: 1em;
+  margin-bottom: 0.5em;
 }
 h4 {
-  direction: rtl;
   font-size: 1.2em;
+  direction: rtl;
   line-height: 1;
-  margin-bottom: 1em;
+  margin-bottom: 0.5em;
 }
 h5 {
-  text-align: center;
-  direction: rtl;
   font-size: 1em;
+  direction: rtl;
   font-weight: bold;
   margin-bottom: 0.5em;
 }
 h6 {
-  direction: rtl;
   font-size: 1em;
+  direction: rtl;
   margin-bottom: 0.5em;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 
@@ -501,74 +307,6 @@ div{
 }
 /* end of globals */
 
-/*contact form*/
-.contact-icon{
-  display: inline-flex;
-}
-.contact-icon div{
-  margin: 5px;
-  width: 3rem;
-  height: 3rem;
-  border-radius: 20%;
-  cursor: pointer;
-  background-position: center;
-  border: 2px groove var(--offWhite);
-}
-.contact-icon div:hover{
-  width: 3.3rem;
-  height: 3.3rem;
-}
-.cform input{
-  margin-bottom: 2px;
-}
-
-/*2 columns, for about & contact*/
-.about { 
-  display: grid;
-  grid-template-columns: 1fr;
-}
-.about h5 {
-  letter-spacing: 2px;
-  font-weight: 500;
-}
-.about img{
-  padding: 20px;
-  padding-top: 0.4rem;
-  height: 280px;
-  width: 290px;
-  border-radius: 50%;
-}
-.about article {
-  margin: 10px;
-}
-@media screen and (min-width: 1050px) {
-  .about {
-    grid-row-gap: 2rem;
-    grid-column-gap: 10px;
-    grid-template-columns: 4fr 2fr;
-  }
-  .about h5 {
-    width: 700px;
-  }
-}
-/*end of about*/
-
-/*OLMap page*/
-.map {
-  width: 70vw;
-  height: 300px;
-  margin: auto;
-  margin-bottom: 15px;
-  background-color: #cccccc;
-}
-.btns-map {
-  width: 215px;
-  display: inline-block;
-  margin: 7px 15px;
-  text-align: center;
-}
-/*end of olmap page*/
-
 /*gallery page*/
 .container {
   position: relative;
@@ -593,101 +331,6 @@ div{
 /*end of gallery*/
 
 
-/*switch pictures hero*/
-.void{
-  height: calc(40vh);
-}
-.switch{
-  top: 0px;
-  width: 100vw;
-  height: calc(75vh);
-  position: absolute;
-  background: center;
-}
-
-/* Banner */
-.banner {
-  top: 20px;
-  left: 100px;
-  position: absolute;
-  width: 500px;
-  padding: 50px;
-  height: calc(60vh);
-  border-radius: 30%;
-  color: var(--mainRed);
-  background: var(--lightblue);
-  box-shadow: var(--lightShadow);
-}
-.dream1 {
-  top: 80px;
-  left: 255px;
-  position: absolute;
-  width: 50px;
-  height: calc(8vh);
-  border-radius: 40%;
-  background: var(--lightblue);
-  box-shadow: var(--lightShadow);
-}
-.dream2 {
-  top: 100px;
-  left: 330px;
-  position: absolute;
-  width: 30px;
-  height: calc(4vh);
-  border-radius: 44%;
-  background: var(--lightblue);
-  box-shadow: var(--lightShadow);
-}
-.banner h1 {
-  font-size: 5rem;
-  text-align: center;
-  letter-spacing: 7px;
-  line-height: 1;
-}
-/*end of Banner */
-  @media screen and (max-width: 1000px) {
-    .banner h1 {
-      font-size: 2rem;
-    }
-    .banner{
-      top: 10px;
-      left: 170px;
-      width: 200px;
-      height: 55%;
-      padding: 20px;
-    }
-    .switch {
-      height: calc(50vh);
-    }
-}
-@media screen and (max-width: 700px) {
-  .banner{
-    left: 35px;
-    padding: 20px;
-  }}
-
-
-
-/* Title */
-.section-title {
-  text-align: center;
-  margin-bottom: 2rem;
-}
-.section-title h4 {
-  font-size: 2rem;
-  letter-spacing: var(--mainSpacing);
-  text-transform: capitalize;
-  margin-bottom: 1rem;
-}
-.section-title div {
-  width:7rem;
-  height: 33px;
-  margin: 0 auto;
-  background: url();
-  background-image: url("./images/icons/sep.png");
-  background-size: cover;
-}
-/* end of Title */
 
 /* room */
 .room {

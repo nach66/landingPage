@@ -34,6 +34,7 @@ export default class ActivitiesList extends Component {
         render () {
             return (
                 <section className="activitylist">
+<br/>
                     <Title title="המלצות לבביות"/> 
                     <div className="activitylist-center">
                         {this.state.activities.map(activity => {

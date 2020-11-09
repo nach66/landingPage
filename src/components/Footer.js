@@ -22,9 +22,10 @@ export default class Footer extends Component {
 }
 
 const FooterWrapper = styled.footer`
-    background: var(--primaryColor);
-    color: var(--myblue);
-    height: 40px;
-    padding: 10px;
+    background: var(--lightblue);
+    color: var(--mainRed);
+    height: 20px;
+    padding: 15px;
     text-align:center;
+    font-weight:bold;
     `;
