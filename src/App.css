@@ -33,6 +33,11 @@
     top:223px;
     right: 200px;
   }
+} @media screen and (max-width: 500px) {
+  .bout{
+    top:213px;
+    left: 20px;
+  }
 }
 
 .spikes {
@@ -181,7 +186,7 @@
 /*end of Banner */
   @media screen and (max-width: 1150px) {
     .pic, .void {
-      height: calc(50vh);
+      height: calc(330px);
     }
     .banner h1 {
       font-size: 2.9rem;
