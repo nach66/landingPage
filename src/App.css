@@ -21,24 +21,24 @@
 .bout{
   position: absolute;
   top:386px;
-  right: 600px;
+  right: 650px;
   z-index: 1;
-  width: 260px;
-  height: 130px;
+  width: 270px;
+  height: 260px;
   background-position: center;
-  background-image: url("./images/icons/boat.png");
+  background-image: url("./images/icons/bo.png");
   margin: 1rem auto;
 }  @media screen and (max-width: 1150px) {
   .bout{
-    top:226px;
+    top:223px;
     right: 200px;
   }
 }
 
 .spikes {
   position: relative;
-  background: var(--mainWhite);
-  height: 0vh;
+  background: var(--mainRed);
+  height: 2vh;
 }
 
 .spikes::after {
