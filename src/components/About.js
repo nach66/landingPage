@@ -29,7 +29,8 @@ export default function About() {
 
                     <a href="tel:055-555-5555">
                         <FaPhone className="contact-icon"/>
-                        <h6>055-555-5555</h6>
+                        <a style={{color: 'var(--myblue)'}}
+                        >055-555-5555</a>
                     </a>
                     </article>
 
@@ -41,7 +42,8 @@ export default function About() {
                         <FaEnvelope 
                             className="contact-icon"
                             style={{color:'var(--primaryColor)'}}/>
-                        <h6>nach666@gmail.com</h6>
+                        <a style={{color: 'var(--myblue)'}}
+                        >nach666@gmail.com</a>
                     </a>
                     </article>
 
@@ -49,6 +51,8 @@ export default function About() {
                     <br/>
                     <h3>כי גם חיות יכולות לעשות כייף חיים!</h3>            
                 </article>
+
+
             </div>
         </>
     )

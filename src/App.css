@@ -4,11 +4,11 @@
   padding: 0;
 }
 :root {
-  --myblue: #073b4c;
+  --myblue: #0A4F66;
   --blue: #118ab2;
   --lightblue: #06d6a0;
-  --primaryColor: #ffd166;
-  --mainRed: #ef476f;
+  --primaryColor: #FFD470;
+  --mainRed: #F36A6D;
   --mainWhite: #fff;
   --mainBlack: #222;
   --mainSpacing: 3px;
@@ -194,7 +194,8 @@
   margin-bottom: 2px;
 }
 .contact-icon{
-  margin: 5px;
+  margin: 10px;
+  margin-bottom: 0px;
   padding: 5px;
   font-size: 2.5rem;
   border-radius: 5px;
