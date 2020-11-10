@@ -1,59 +1,55 @@
 import React from 'react'
-import Title from '../components/Title';
-import {FaMapMarked, FaEnvelope,FaPhone} from 'react-icons/fa';
-
+import {FaEnvelope,FaPhone} from 'react-icons/fa';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {faThumbsUp, faThumbsDown} from "@fortawesome/free-solid-svg-icons";
 export default function About() {
     return (
         <>
             <div className="about">
     
                 <article className="haki-sec" style={{  textAlign: 'right'}}>
-                    <h4>
-                        נעים מאוד, פטי.
-                    </h4>
-                    <ul>
-                        <li>פטסיטרית אחראית ומנוסה</li>
-                        <li>שומרת על היצורים האהובים עליכם במצבם הטבעי, ואף משפרת.</li>
-                        <li>מוציאה לטיולים ומאכילה בממתקים את כל הצדדים הרלוונטיים.</li>
-                        <li>לוחשת לכלבים וגם צועקת כשצריך</li>
-                        <li>מדברת לחשננית כך שיכולה להסתדר גם עם חתולים.</li>
-                        <li>אין ציפור או דג שלא ירגישו בטוחים בקרבתי גם כן, כמובן בקופסא המתאימה.</li>
-                    </ul>
+                    <h3>נעים מאוד, פטי.</h3>
+                    <h5><FontAwesomeIcon icon={faThumbsUp} /> פטסיטרית אחראית ומנוסה.</h5>
+                    <h5><FontAwesomeIcon icon={faThumbsUp} /> שומרת על היצורים האהובים עליכם במצבם הטבעי, ואף משפרת.</h5>
+                    <h5><FontAwesomeIcon icon={faThumbsUp} /> מוציאה לטיולים ומאכילה בממתקים את כל הצדדים הרלוונטיים.</h5>
+                    <h5><FontAwesomeIcon icon={faThumbsUp} /> לוחשת לכלבים וגם צועקת כשצריך.</h5>
+                    <h5><FontAwesomeIcon icon={faThumbsDown} /> מדברת לחשננית כך שיכולה להסתדר גם עם חתולים.</h5>
+                    <h5><FontAwesomeIcon icon={faThumbsUp} /> אין ציפור או דג שלא ירגישו בטוחים בקרבתי גם כן, כמובן בקופסא המתאימה.</h5>
             </article>
 
-                <article className="sec">
-                        <h5>פנו אל פטי וכל הסידורים שלכם יתגשמו לטובה</h5>
-                        <h3>כי גם חיות יכולות לעשות כייף חיים!</h3>
-                        <br/>
-                        <article style={{display: 'inline-block', marginLeft:'30px'}}>
-                            <a href="tel:05-555-5555">
-                                    <FaPhone style={{ 
-                                        marginTop: '3px',
-                                        padding: '4px',
-                                        fontSize: '1rem',
-                                        borderRadius: '5px',
-                                        backgroundColor: 'var(--mainRed)',
-                                        border: '1px groove var(--lightblue)',
-                                        color:'rgb(7, 161, 58)'}}/>
-                            </a>
-                            <h6>05-555-5555</h6>
-                        </article>
-                        <article style={{display: 'inline-block', marginRight:'20px'}}>
-                            <a href={"mailto:nach666@gmail.com"} rel="noopener noreferrer" target="_blank">
-                                    <FaEnvelope style={{ 
-                                        padding: '4px',
-                                        fontSize: '1rem',
-                                        borderRadius: '5px',
-                                        backgroundColor: 'var(--mainRed)',
-                                        border: '1px groove var(--lightblue)',
-                                        color:'#ebe050'}}/>
-                                </a>
-                            <h6>nach666@gmail.com</h6>
-                        </article>
-            </article>
-    
+                <article className="blue-sec">
+                    <br/>
+                    <h5>פנו אל פטי וכל הסידורים שלכם יתגשמו לטובה</h5>
+                    <br/>
+
+                    <article style={{
+                        display:'inline-block',
+                        marginLeft: '20px'
+                    }}>
+
+                    <a href="tel:055-555-5555">
+                        <FaPhone className="contact-icon"/>
+                        <h6>055-555-5555</h6>
+                    </a>
+                    </article>
+
+                    <article style={{
+                        display:'inline-block',
+                        marginRight: '20px'
+                    }}>
+                    <a href={"mailto:nach666@gmail.com"} rel="noopener noreferrer" target="_blank">
+                        <FaEnvelope 
+                            className="contact-icon"
+                            style={{color:'var(--primaryColor)'}}/>
+                        <h6>nach666@gmail.com</h6>
+                    </a>
+                    </article>
+
+                    <br/>
+                    <br/>
+                    <h3>כי גם חיות יכולות לעשות כייף חיים!</h3>            
+                </article>
             </div>
-
         </>
     )
 }

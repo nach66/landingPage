@@ -122,55 +122,49 @@
     font-size: 1.8rem;
   }
 }
+@media screen and (max-width: 500px) {
+  .banner h1{
+    padding-top: 20px;
+    font-size: 1.5rem;
+  }
+}
 
 /* services */
-.blue-sec {
-  padding: 0.5rem;
+.pink-sec {
+  padding: 2rem;
+  padding-bottom: 0rem;
+  text-align: center;
   background:var(--mainRed);
   color: var(--myblue);
-  text-align: center;
 }
 .haki-sec {
   padding: 2rem;
   text-align: center;
   color: var(--mainRed);
-  background-color: var(--primaryColor);
+  background: var(--primaryColor);
 }
-.sec {
+.blue-sec {
   padding: 2rem;
   text-align: center;
-  background-color: var(--lightblue);
   color: #fff;
+  background: var(--lightblue);
 }
 
-/*2 columns, for about & contact*/
+/*2 columns, for about */
 .about { 
-  width: 100%;
   display: grid;
-  grid-template-columns: 1fr;
 }
 .about h5 {
   letter-spacing: 2px;
   font-weight: 500;
+  font-size: larger;
 }
-.about img{
-  padding: 20px;
-  padding-top: 0.4rem;
-  height: 280px;
-  width: 290px;
-  border-radius: 50%;
-}
-@media screen and (min-width: 1050px) {
+@media screen and (min-width: 900px) {
   .about {
     grid-row-gap: 2rem;
-    grid-column-gap: 10px;
-    grid-template-columns: 1fr 1fr;
-  }
-  .about h5 {
-    width: 700px;
+    grid-template-columns: 3fr 2fr;
   }
 }
-/*end of about*/
 
 /*contact form*/
 .cform{
@@ -179,6 +173,16 @@
 }
 .cform input{
   margin-bottom: 2px;
+}
+.contact-icon{
+  margin: 5px;
+  padding: 5px;
+  font-size: 2.5rem;
+  border-radius: 5px;
+  color:rgb(7, 161, 58);
+  background: var(--mainRed);
+  box-shadow: var(--lightShadow);
+  border: 2px groove var(--lightblue);
 }
 @media screen and (max-width: 750px) {
   .cform{
