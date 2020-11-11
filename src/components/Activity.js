@@ -1,30 +1,36 @@
 import React from 'react'
 import PropTypes from 'prop-types';
-import a from '../images/כותרת/b1.jpg'
-import b from '../images/כותרת/b2.jpg'
-import c from '../images/כותרת/b3.jpg'
-import d from '../images/כותרת/b4.jpg'
+import {FaStar} from 'react-icons/fa';
 
 export default function Activity({activity}) {
-    const {icon,title,description} = activity;
+    const {icon,name,description,stars, s} = activity;
         return (
             <>
-            <article className="activity">
-                <div className="img-container-activity">
-                    <img src={icon} alt="act"/>
-                    <div className="img__description"/>
-                </div> 
-                <p className="activity-name">{title}</p>   
-            </article>
-            <p>{description}</p>  
-            </>                   
+                <section className="reco">
+                    <article style={{
+                        textAlign: 'center'
+                    }}>
+                        <img src={icon} alt="pic"/>
+                        <br/>
+                        <h4>{name}</h4>
+                    </article>
+                    <article>
+                        <p>"{description}"</p>
+                        <br/>
+                        <div>                            
+                        {s}
+                        {stars}
+                        </div>
+                    </article>
+                </section>
+            </>
         );
     }
     
-    Activity.prototype={
-        activity:PropTypes.shape({
-            name:PropTypes.string.isRequired,
-            slug:PropTypes.string.isRequired,
-            image:PropTypes.arrayOf(PropTypes.string).isRequired
-        })
-};
+//     Activity.prototype={
+//         activity:PropTypes.shape({
+//             name:PropTypes.string.isRequired,
+//             description:PropTypes.string.isRequired,
+//             image:PropTypes.arrayOf(PropTypes.string).isRequired
+//         })
+// };

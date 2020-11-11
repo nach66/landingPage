@@ -5,29 +5,35 @@ import a from '../images/reco/kuala.jpg'
 import b from '../images/reco/crazy.jpg'
 import c from '../images/reco/meni.jpg'
 import d from '../images/reco/cold.jpg'
+import { FaStarHalf, FaStar, FaStarHalfAlt, FaStarAndCrescent} from 'react-icons/fa';
+import { faStarHalfAlt } from '@fortawesome/free-solid-svg-icons';
 
 export default class ActivitiesList extends Component {
         state={
-            activities: [
+            reco: [
                 {
                     icon:a,
-                    title:"קאלי",
-                    description:"היא באמת לוחשת לכלבים! מאז שפטי הייתה אצלנו, קאלי האהובה שלנו לא מפסיקה לדבר. אנחנו שמחים שהיא מצאה את הקול הייחודי שלה ולאחרונה אף התחילה ללמוד צרפתית. היא כלבה מאוד עסוקה בימים אלה."
+                    name:"קאלי",
+                    description:"היא באמת לוחשת לכלבים! מאז שפטי הייתה אצלנו, קאלי האהובה שלנו לא מפסיקה לדבר. אנחנו שמחים שהיא מצאה את הקול הייחודי שלה ולאחרונה אף התחילה ללמוד צרפתית. היא כלבה מאוד עסוקה בימים אלה.",
+                    stars: [<FaStar/>, <FaStar/>, <FaStar/>, <FaStar/>, <FaStar/>],
                 },
                 {
                     icon:b,
-                    title:"סארוול",
-                    description:"הבעלים שלי מעולם לא הבינו אותי כמו שצריך. כשפטי הגיעה הרגשתי סופסוף סיכויי לפרוח ולגלות מי עוד אני באמת. סיפרנו צ'יזבאטים לאור ניצוצות הטירוף שבעיניים שלי, והרגשתי שאני באמת באמת פורחת. ארצה גם לציין שפטי מעולם מעולם לא דיווחה על הגופות שנעלמו באותו לילה. פשוט מסרו אותי לאימוץ אחר כך."
+                    name:"סארוול",
+                    description:"הבעלים שלי מעולם לא הבינו אותי כמו שצריך. כשפטי הגיעה הרגשתי סופסוף סיכויי לפרוח ולגלות מי עוד אני באמת. סיפרנו צ'יזבאטים לאור ניצוצות הטירוף שבעיניים שלי, והרגשתי שאני באמת באמת פורחת. ארצה גם לציין שפטי מעולם מעולם לא דיווחה על הגופות שנעלמו באותו לילה. פשוט מסרו אותי לאימוץ אחר כך.",
+                    stars: [<FaStar/>, <FaStar/>, <FaStar/>, <FaStar/>, <FaStar/>],
                 },
                 {
                     icon:c,
-                    title:" מני האפרוח",
-                    description:"לא יודע. אני לא זוכר."
+                    name:" מני האפרוח",
+                    description:"לא יודע. אני לא זוכר.",
+                    stars: [<FaStarHalfAlt/>, <FaStar/>],
                 },
                 {
                     icon:d,
-                    title:"גור",
-                    description:"הייתי מאוד קטן, ופטי הצילה אותי מלהיות קטן."
+                    name:"גור",
+                    description:"הייתי מאוד קטן, ופטי הצילה אותי מלהיות קטן.",
+                    stars: [<FaStar/>, <FaStar/>, <FaStar/>, <FaStar/>, <FaStar/>],
                 }
             ]
         }
@@ -38,7 +44,7 @@ export default class ActivitiesList extends Component {
                     <Title title="המלצות לבביות"/> 
                     <div className="cats"/>
                     <div className="activitylist-center">
-                        {this.state.activities.map(activity => {
+                        {this.state.reco.map(activity => {
                             return <Activity key={activity.id} activity={activity}/>;
                         })}
                     </div>

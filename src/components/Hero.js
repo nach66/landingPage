@@ -7,7 +7,11 @@ export default function Hero() {
         <>
             <section className="void">
                 <div className="pic">
-                <Banner title="הכלב חולם על חופשה?"/>
+                    <div className="banner">
+                        <h1>הכלב</h1>
+                        <h1>חולם על</h1>
+                        <h1>חופשה?</h1>
+                    </div>
                     <div className="dream1"/>
                     <div className="dream2"/>
                 </div>   
@@ -20,7 +24,7 @@ export default function Hero() {
             <section class="blue-spikes"></section>
             <section class="spikes"></section>
             
-            <section className="pink-sec">
+            <section className="hero-sec">
                     <h2>או אולי אתם...</h2>
                     <h4>בין אם אתם טסים לחופשה חלומית, או דווקא כדי לבקר קרוב משפחה שאתם בקושי סובלים - </h4>
                     <article style={{

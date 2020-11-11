@@ -7,7 +7,7 @@ export default function About() {
         <>
             <div className="about">
     
-                <article className="haki-sec" style={{  textAlign: 'right'}}>
+                <article className="pink-sec" style={{  textAlign: 'right'}}>
                     <h3>נעים מאוד, פטי.</h3>
                     <h5><FontAwesomeIcon icon={faThumbsUp} /> פטסיטרית אחראית ומנוסה.</h5>
                     <h5><FontAwesomeIcon icon={faThumbsUp} /> שומרת על היצורים האהובים עליכם במצבם הטבעי, ואף משפרת.</h5>

@@ -20,29 +20,25 @@
 
 .bout{
   position: absolute;
-  top:386px;
-  right: 650px;
+  top:342px;
+  right: 520px;
   z-index: 1;
-  width: 270px;
+  width: 280px;
   height: 260px;
   background-position: center;
   background-image: url("./images/icons/bo.png");
   margin: 1rem auto;
-}  @media screen and (max-width: 1150px) {
+}  @media screen and (max-width: 900px) {
   .bout{
     top:224px;
-    right: 215px;
-  }
-} @media screen and (max-width: 500px) {
-  .bout{
-    left: 20px;
+    left: 30px;
   }
 }
 
 /*הים הטיפשי*/
 .spikes {
   position: relative;
-  background: var(--mainRed);
+  background: var(--primaryColor);
   height: 3vh;
 }
 .spikes::after {
@@ -56,15 +52,15 @@
   height: 45px;
   background-size: 50px 100%;
   background-image: 
-  linear-gradient(15deg, var(--mainRed) 25%, transparent 30%),
-  linear-gradient(345deg, var(--mainRed) 25%, transparent 30%);
+  linear-gradient(10deg, var(--primaryColor) 25%, transparent 30%),
+  linear-gradient(350deg, var(--primaryColor) 25%, transparent 30%);
   background-position: 0 0;
 }
 
 .blue-spikes {
   position: relative;
   background: var(--myblue);
-  height: 4vh;
+  height: 3vh;
   z-index: 1;
 }
 .blue-spikes::after {
@@ -130,49 +126,52 @@
 
 /*hero*/
 .void{
-  height: calc(75vh);
+  height: 450px;
 }
 .pic{
   width: 100vw;
-  height: 500px;
+  height: 450px;
   background: url("./images/כותרת/freedom.jpg");
   background-size: cover;
   background-position: center;
 }
 /* Banner */
 .banner h1 {
-  font-size: 5rem;
+  padding-top: 15px;
+  font-size: 2.8rem;
   font-family:  'Gill Sans MT',  sans-serif;
   text-align: center;
   letter-spacing: 6px;
+  line-height: 0.5;
 }
 .banner {
   position: absolute;
   top: 30px;
-  left: 6%;
-  width: 320px;
-  padding: 40px;
-  height: calc(45vh);
+  left: 50px;
+  width: 200px;
+  height: 170px;
+  padding: 50px;
+  padding-top: 40px;
   border-radius: 30%;
   color: var(--mainRed);
   background: var(--lightblue);
   box-shadow: var(--lightShadow);
 }
 .dream1 {
-  top: 90px;
-  left: 44%;
-  width: 120px;
-  height: 120px;
+  top: 70px;
+  left: 440px;
+  width: 100px;
+  height: 100px;
   position: absolute;
   border-radius: 40%;
   background: var(--lightblue);
   box-shadow: var(--lightShadow);
 }
 .dream2 {
-  top: 120px;
-  left: 58%;
-  width: 60px;
-  height: 60px;
+  top: 100px;
+  left: 620px;
+  width: 50px;
+  height: 50px;
   position: absolute;
   border-radius: 40%;
   background: var(--lightblue);
@@ -180,38 +179,39 @@
 }
 /*end of Banner */
   @media screen and (max-width: 1150px) {
-    .pic, .void {
-      height: 330px;
-    }
     .banner h1 {
-      font-size: 2.9rem;
+      padding-top: 5px;
+      font-size: 2.8rem;
     }
     .banner{
       top: 10px;
-      left: 7vw;
-      width: 22vw;
-      height: 20vh;
+      left: 55px;
+      width: 200px;
+      height: 120px;
       padding-top: 40px;
     }
     .dream1 {
-      top: 80px;
-      left: 42vw;
-      width: 90px;
-      height: calc(13vh);
+      top: 90px;
+      left: 400px;
+      width: 70px;
+      height: 70px;
     }
     .dream2 {
-      top: 110px;
-      left: 55vw;
+      top: 105px;
+      left: 500px;
       width: 40px;
-      height: calc(6vh);
+      height: 40px;
     }
 }
 @media screen and (max-width: 900px) {
+  .pic, .void {
+    height: 330px;
+  }
   .banner{
     top: 10px;
     left: 2vw;
     width: 28vw;
-    height: 130px;
+    height: 140px;
     padding: 20px;
   }
   .dream1 {
@@ -229,49 +229,55 @@
 }
 @media screen and (max-width: 700px) {
   .banner h1{
-    padding-top: 15px;
+    padding-top: 11px;
     font-size: 2rem;
   }
 }
 @media screen and (max-width: 530px) {
   .banner h1{
-    padding-top: 1px;
+    padding-top: 10px;
     font-size: 1.5rem;
   }
   .banner {
     top: 10px;
-    left: 2vw;
-    width: 110px;
+    left: 10px;
+    width: 140px;
     height: 100px;
     padding: 15px;
   }
   .dream1 {
     top: 70px;
-    left: 41vw;
+    left: 200px;
     width: 50px;
     height: 45px;
   }
   .dream2 {
     top: 90px;
-    left: 59vw;
+    left: 270px;
     width: 30px;
     height: 25px;
   }
 }
 
 /* sections */
-.pink-sec {
+.hero-sec {
   padding: 2rem;
   padding-bottom: 0rem;
   text-align: center;
-  background:var(--mainRed);
+  background:var(--primaryColor);
   color: var(--myblue);
 }
-.haki-sec {
+.contact-sec {
   padding: 2rem;
   text-align: center;
   color: var(--mainRed);
   background: var(--primaryColor);
+}
+.pink-sec {
+  padding: 2rem;
+  text-align: center;
+  color: var(--primaryColor);
+  background: var(--mainRed);
 }
 .blue-sec {
   padding: 25px;
@@ -441,69 +447,37 @@ div{
 
 /* activitylist */
 .activitylist-center {
-  width: 80vw;
+  width: 90vw;
   margin: auto;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-row-gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(390px, 1fr));  
+  grid-row-gap: 20px;
   grid-column-gap: 30px;
+  margin-bottom: 40px;
 }
 
-/* activity */
-.activity {
-  border-radius: 10px;
-  background: var(--lightblue);
+/* reco */
+.reco {
+  border-radius: 5px;
+  padding: 20px;
+  display: grid;
+  grid-row-gap: 1rem;
+  grid-column-gap: 1rem;
+  grid-template-columns: 1fr 3fr;
+  background: var(--primaryColor);
   box-shadow: var(--lightShadow);
+  color: var(--myblue);
 }
-/*שניהם השם איכשו*/
-.activity-name {
-  padding: 0.3rem 0.3rem;
-  text-align: center;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  letter-spacing: var(--mainSpacing);
+@media screen and (max-width: 1000px) {
+  .reco {
+    grid-template-columns: 1fr;
+  }
 }
-.activity p {
-  font-size: large;
-  font-weight: 600;
-  font-style: initial;
+.reco img {
+  width: 190px;
+  height: 190px;
+  border-radius: 50%;
 }
-
-.img-container-activity {
-  padding: 2px;
-  position: relative;
+.reco div {
+  text-align: end;
 }
-.img-container-activity img {
-  border-radius: 10px;
-  width: 100%;
-  height: 290px;
-  display: block;
-  transition: var(--mainTransition);
-}
-
-/*hovering text effect*/
-.img__description {
-  background: rgba(41, 39, 39, 0.815);
-  visibility: hidden;
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;  
-  border-radius: 10px;
-  padding: 12px;
-  /* transition effect. not necessary */
-  transition: opacity .2s, visibility .2s;
-}
-/* טקסט תיאור */
-.img__description p{
-  color: var(--lightblue);
-  font-weight: 200;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-.img-container-activity:hover .img__description {
-  visibility: visible;
-  opacity: 1;
-}
-
-/* end of activity  */
