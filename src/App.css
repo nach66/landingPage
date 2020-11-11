@@ -39,6 +39,7 @@
   }
 }
 
+/*הים הטיפשי*/
 .spikes {
   position: relative;
   background: var(--mainRed);
@@ -77,8 +78,8 @@
   height: 45px;
   background-size: 40px 100%;
   background-image: 
-  linear-gradient(30deg, var(--myblue) 25%, transparent 35%),
-  linear-gradient(340deg, var(--myblue) 25%, transparent 38%);
+  linear-gradient(25deg, var(--myblue) 25%, transparent 33%),
+  linear-gradient(335deg, var(--myblue) 25%, transparent 33%);
   background-position: 0 0;
 }
 
@@ -100,8 +101,8 @@
   height: 75px;
   background-size: 35px 100%;
   background-image: 
-  linear-gradient(20deg, var(--blue) 25%, transparent 33%),
-  linear-gradient(335deg, var(--blue) 25%, transparent 33%);
+  linear-gradient(20deg, var(--blue) 25%, transparent 32%),
+  linear-gradient(340deg, var(--blue) 25%, transparent 32%);
   background-position: 0 0;
 }
 
@@ -122,8 +123,8 @@
   height: 65px;
   background-size: 20px 100%;
   background-image: 
-  linear-gradient(25deg, var(--secblue) 25%, transparent 33%),
-  linear-gradient(335deg, var(--secblue) 25%, transparent 33%);
+  linear-gradient(25deg, var(--secblue) 25%, transparent 30%),
+  linear-gradient(335deg, var(--secblue) 25%, transparent 30%);
   background-position: 0 0;
 }
 
@@ -133,7 +134,7 @@
 }
 .pic{
   width: 100vw;
-  height: calc(75vh);
+  height: 500px;
   background: url("./images/כותרת/freedom.jpg");
   background-size: cover;
   background-position: center;
@@ -180,7 +181,7 @@
 /*end of Banner */
   @media screen and (max-width: 1150px) {
     .pic, .void {
-      height: calc(330px);
+      height: 330px;
     }
     .banner h1 {
       font-size: 2.9rem;
@@ -234,31 +235,31 @@
 }
 @media screen and (max-width: 530px) {
   .banner h1{
-    padding-top: 10px;
-    font-size: 1.1rem;
+    padding-top: 1px;
+    font-size: 1.5rem;
   }
   .banner {
     top: 10px;
     left: 2vw;
     width: 110px;
-    height: 80px;
+    height: 100px;
     padding: 15px;
   }
   .dream1 {
     top: 70px;
-    left: 40vw;
+    left: 41vw;
     width: 50px;
     height: 45px;
   }
   .dream2 {
     top: 90px;
-    left: 57vw;
+    left: 59vw;
     width: 30px;
     height: 25px;
   }
 }
 
-/* services */
+/* sections */
 .pink-sec {
   padding: 2rem;
   padding-bottom: 0rem;
@@ -273,39 +274,34 @@
   background: var(--primaryColor);
 }
 .blue-sec {
-  padding: 2rem;
-  text-align: center;
+  padding: 25px;
+  padding-right: 45px;
+  text-align: right;
   color: #fff;
   background: var(--lightblue);
 }
 
-/*2 columns, for about */
+/*2 columns*/
 .about { 
   display: grid;
 }
-.about h5 {
-  letter-spacing: 2px;
-  font-weight: 500;
-  font-size: larger;
-}
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 1150px) {
   .about {
     grid-row-gap: 2rem;
     grid-template-columns: 3fr 2fr;
   }
 }
+/*about*/
+.about h5 {
+  letter-spacing: 2px;
+  font-weight: 500;
+  font-size: 19px;
+}
 
 /*contact form*/
-.cform{
-  margin: auto;
-  width: 60vw;
-}
-.cform input{
-  margin-bottom: 2px;
-}
 .contact-icon{
-  margin: 10px;
-  margin-bottom: 0px;
+  margin: 30px;
+  margin-bottom: -17px;
   padding: 5px;
   font-size: 2.5rem;
   border-radius: 5px;
@@ -314,28 +310,56 @@
   box-shadow: var(--lightShadow);
   border: 2px groove var(--lightblue);
 }
+.cform{
+  margin: auto;
+  width: 60vw;
+}
 @media screen and (max-width: 750px) {
   .cform{
     width: 80vw;
     margin: auto;
   }
 }
+.form-control {
+  width: 100%;
+  font-size: 1rem;
+  border-radius: 5%;
+  border: #ecb80e 1px groove;
+  color: var(--primaryColor);
+  padding: 3px;
+  margin: 2px;
+}
+.long { border-radius: 1%; }
+.submit{
+  width: 90%;
+  letter-spacing: var(--mainSpacing);
+  font-size: medium;
+  font-weight:900;
+  color: var(--primaryColor);
+  background: var(--mainRed);
+  padding: 0.4rem 0.9rem;
+  border-radius: 20px;
+  margin-top: 23px;
+  cursor: pointer;
+}
+.submit:hover {
+  box-shadow: var(--lightShadow);
+  transform: translateY(-0.25rem);
+}
 
 /* Title */
 .section-title {
   text-align: center;
-  margin-bottom: 1.5rem;
 }
 .section-title h4 {
   font-size: 2rem;
   letter-spacing: var(--mainSpacing);
-  text-transform: capitalize;
-  margin-bottom: 1rem;
 }
-.section-title div {
-  width:8rem;
-  height: 33px;
-  margin: 0 auto;
+.cats {
+  width:115px;
+  height: 30px;
+  margin: auto;
+  margin-bottom: 25px;
   background-image: url("./images/icons/sep.png");
   background-size: cover;
 }
@@ -372,10 +396,6 @@
 /*end of popup*/
 
 /* globals */
-body {
-  font-family: Verdana, Geneva, Tahoma, sans-serif, Arial, Helvetica, sans-serif;
-  line-height: 1.4;
-}
 h1 {
   font-size: 3em;
   direction: rtl;
@@ -416,293 +436,31 @@ h6 {
 div{
   direction: rtl;
 }
-.loading {
-  text-transform: capitalize;
-  text-align: center;
-  margin-top: 3rem;
-}
-.error {
-  text-align: center;
-  text-transform: uppercase;
-  margin: 2rem 0;
-}
-.empty-search {
-  text-align: center;
-  text-transform: capitalize;
-  margin: 2rem 0;
-  padding: 1rem;
-  letter-spacing: var(--mainSpacing);
-}
 /* end of globals */
 
-/*gallery page*/
-.container {
-  position: relative;
-}
-.container div {
-  display: inline-block;
-  transition: var(--mainTransition);
-  margin: 10px 18px 10px 18px;
-  border: 1px solid var(--darkGrey); 
-  background-Size: cover;
-  width: 250px; 
-  height: 200px;
-  cursor: pointer;
-}
-.container div:hover {
-  box-shadow: var(--lightShadow);
-}
-.vv{
-  margin: 100px;
-  background-position-y: bottom;
-}
-/*end of gallery*/
 
-
-
-/* room */
-.room {
-  box-shadow: var(--lightShadow);
-  transition: var(--mainTransition);
-}
-.room:hover {
-  box-shadow: var(--darkShadow);
-}
-
-.img-container {
-  position: relative;
-}
-.img-container img {
-  width: 100%;
-  display: block;
-  transition: var(--mainTransition);
-}
-
-.room-link {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: scale(0);
-  transition: all 0.3s linear;
-}
-.img-container:hover {
-  background: rgba(0, 0, 0, 0.8);
-}
-.img-container:hover img {
-  opacity: 0.3;
-}
-.img-container:hover .room-link {
-  transform: translate(-50%, -50%) scale(1);
-}
-.room-info {
-  background: var(--darkGrey);
-  text-transform: capitalize;
-  padding: 0.5rem 0;
-  text-align: center;
-  font-weight: 700;
-  letter-spacing: var(--mainSpacing);
-}
-/* end of room  */
-/* single room*/
-.room-section {
-  width: 75vw;
-  margin: 0 auto 3rem auto;
-}
-.room-section p {
-  line-height: 1.5;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
-}
-.room-section h3 {
-  letter-spacing: var(--mainSpacing);
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
-}
-
-.extras {
-  list-style-type: none;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
-  grid-column-gap: 2rem;
-  grid-row-gap: 1rem;
-}
-.extras li{
-  font-weight: 300;
-  letter-spacing: var(--mainSpacing);
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-
-/* בעמוד החדרים! לא בתפריט */
-.book-now-btn {
-  padding: 0.5rem;
-  font-weight: 600;
-  font-size: 1rem;
-  border: 2px groove ;
-  color: var(--mainWhite);
-  background : var(--mainGreen);
-  transition: var(--mainTransition);
-  letter-spacing: var(--mainSpacing);
-  justify-content: center;  
-  text-decoration: none;
-  border-radius:10px;
-}
-.book-now-btn:hover {
-  box-shadow: 0 0.5em 0.5em -0.2em #3bb193 ;
-  transform: translateY(-0.25em);
-}
-.calander-icon{
-  font-size: 0.8rem;
-  margin-top: 5px;
-  margin-right:6px;
-}
-@media screen and (min-width: 935px) {
-  .calander-icon{
-    font-size: 1.1rem;
-    margin:8px;
-  }
-  .book-now-btn {
-    font-size: 1.3rem;
-  }
-  .room-section {
-    width: 75vw;
-    max-width: 1170px;
-  }
-}
-/* end of single room*/
-
-/* roomlist */
-.roomslist {
-  padding-bottom: 2rem;
-}
-.roomslist-center {
-  width: 80vw;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
-  grid-row-gap: 2rem;
-  grid-column-gap: 30px;
-}
-/* end of roomlist */
-
-/*rooms*/
-.btn-room-contain {
-  position: relative;
-  width: 70vw;
-  left: 3px;
-  margin: auto;
-  display: grid;
-  grid-column-gap: 2rem;
-  grid-template-columns: 1fr 1fr;
-}
-.room-btns {
-  font-weight: 700;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  font-size: 1.5rem;
-  text-align: center;
-  width: 100%;
-  height: 100%;
-  padding: 10px;
-  border-radius: 3%;
-  box-shadow: 0 0.5em 0.4em -0.4em #050a5c;
-}
-@media screen and (max-width: 555px) {
-  .btn-room-contain {
-    width: 80vw;
-  }
-  .room-btns {
-    font-size: 1.2rem;
-  }
-}
-@media screen and (max-width: 480px) {
-  .btn-room-contain {
-    left:3px;
-  }
-  .room-btns {
-    font-size: 0.9rem;
-  }
-}
-@media screen and (max-width: 380px) {
-  .btn-room-contain {
-    left: 5px;
-  }
-}
-
-.form-group {
-  text-transform: capitalize;
-}
-.form-group label {
-  display: block;
-  letter-spacing: var(--mainSpacing);
-  margin-bottom: 0.5rem;
-}
-.form-control {
-  width: 100%;
-  font-size: 1rem;
-  border-radius: 5%;
-  border: #ecb80e 1px groove;
-  color: var(--primaryColor);
-  padding: 3px;
-  margin: 1px;
-}
-.long {
-  border-radius: 1%;
-}
-.size-inputs {
-  display: flex;
-}
-.size-input {
-  width: 40%;
-  padding: 0.2rem;
-  border: 1px solid var(--mainBlack);
-  border-radius: 0.3rem;
-  margin-right: 0.3rem;
-}
-.single-extra label {
-  display: inline-block;
-  font-size: 0.8rem;
-  margin-left: 0.5rem;
-}
-/* end of rooms fitler*/
-
-@media screen and (min-width: 776px) {
-  .filter-form {
-    width: 70vw;
-  }
-  .roomslist-center {
-    width: 90vw;
-  }
-}
-@media screen and (min-width: 992px) {
-  .filter-form,
-  .roomslist-center {
-    width: 95vw;
-    max-width: 1170px;
-  }
-}
 /* activitylist */
-.activitylist {
-  padding-bottom: 1rem;
-}
 .activitylist-center {
   width: 80vw;
-  margin: 0 auto;
+  margin: auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-row-gap: 3rem;
+  grid-row-gap: 30px;
   grid-column-gap: 30px;
 }
-
-@media screen and (min-width: 992px) {
-  .activitylist-center {
-    width: 80vw;
-    max-width: 1170px;
-  }
-}
-/* end of activitylist */
 
 /* activity */
 .activity {
   border-radius: 10px;
   background: var(--lightblue);
   box-shadow: var(--lightShadow);
+}
+/*שניהם השם איכשו*/
+.activity-name {
+  padding: 0.3rem 0.3rem;
+  text-align: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  letter-spacing: var(--mainSpacing);
 }
 .activity p {
   font-size: large;
@@ -743,20 +501,9 @@ div{
   font-weight: 200;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-/* לינק */
-.img__description a{
- color: var(--primaryColor);
- font-weight:600;
- font-size: large;
-}
 .img-container-activity:hover .img__description {
   visibility: visible;
   opacity: 1;
 }
-.activity-name {
-  padding: 0.3rem 0.3rem;
-  text-align: center;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  letter-spacing: var(--mainSpacing);
-}
+
 /* end of activity  */

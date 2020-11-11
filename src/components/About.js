@@ -1,5 +1,5 @@
 import React from 'react'
-import {FaEnvelope,FaPhone} from 'react-icons/fa';
+import {FaPaw, FaShoePrints, FaEnvelope,FaPhone} from 'react-icons/fa';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {faThumbsUp, faThumbsDown} from "@fortawesome/free-solid-svg-icons";
 export default function About() {
@@ -17,41 +17,30 @@ export default function About() {
                     <h5><FontAwesomeIcon icon={faThumbsUp} /> אין ציפור או דג שלא ירגישו בטוחים בקרבתי גם כן, כמובן בקופסא המתאימה.</h5>
             </article>
 
-                <article className="blue-sec">
-                    <br/>
+                <article className="blue-sec">                
                     <h5>פנו אל פטי וכל הסידורים שלכם יתגשמו לטובה</h5>
-                    <br/>
-
-                    <article style={{
-                        display:'inline-block',
-                        marginLeft: '20px'
-                    }}>
-
-                    <a href="tel:055-555-5555">
-                        <FaPhone className="contact-icon"/>
-                        <a style={{color: 'var(--myblue)'}}
-                        >055-555-5555</a>
-                    </a>
-                    </article>
-
-                    <article style={{
-                        display:'inline-block',
-                        marginRight: '20px'
-                    }}>
-                    <a href={"mailto:nach666@gmail.com"} rel="noopener noreferrer" target="_blank">
-                        <FaEnvelope 
-                            className="contact-icon"
-                            style={{color:'var(--primaryColor)'}}/>
-                        <a style={{color: 'var(--myblue)'}}
-                        >nach666@gmail.com</a>
-                    </a>
-                    </article>
-
+                        <a href="tel:055-555-5555">
+                                <FaPhone className="contact-icon"/>
+                                <a style={{
+                                    color: 'var(--myblue)',
+                                    fontSize:'25px'
+                                }}>055-555-5555</a>
+                            </a>
+                        <br/>
+                        <a href={"mailto:nach666@gmail.com"} rel="noopener noreferrer" target="_blank">
+                            <FaEnvelope 
+                                className="contact-icon"
+                                style={{color:'var(--primaryColor)'}}/>
+                            <a style={{
+                                color: 'var(--myblue)',
+                                fontSize:'25px'
+                            }}>nach666@gmail.com</a>
+                        </a>
                     <br/>
                     <br/>
-                    <h3>כי גם חיות יכולות לעשות כייף חיים!</h3>            
+                    <br/>
+                    <h3>כי גם חיות יכולות לעשות כייף חיים!</h3>   
                 </article>
-
 
             </div>
         </>

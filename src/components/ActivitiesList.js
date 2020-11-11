@@ -36,6 +36,7 @@ export default class ActivitiesList extends Component {
                 <section className="activitylist">
 <br/>
                     <Title title="המלצות לבביות"/> 
+                    <div className="cats"/>
                     <div className="activitylist-center">
                         {this.state.activities.map(activity => {
                             return <Activity key={activity.id} activity={activity}/>;
