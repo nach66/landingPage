@@ -5,8 +5,6 @@ export default class Footer extends Component {
     render() {
         return (
             <>
-                {/* <div ref={el => (this.instance = el)} />; */}
-
                 <FooterWrapper>
                     <div className="container py-3">
                         <p style={{
@@ -22,8 +20,8 @@ export default class Footer extends Component {
 }
 
 const FooterWrapper = styled.footer`
-    background: var(--secblue);
     color: var(--primaryColor);
+    background: var(--blue);
     height: 40px;
     padding-top: 20px;
     text-align:center;

@@ -1,5 +1,4 @@
 import React from 'react'
-import Title from './Title'
 import {FaPaw} from 'react-icons/fa';
 
 export default function ContactForm() {

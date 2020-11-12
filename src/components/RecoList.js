@@ -1,14 +1,12 @@
 import React, { Component } from 'react'
-import Title from './Title';
-import Activity from "./Activity";
-import a from '../images/reco/kuala.jpg'
-import b from '../images/reco/crazy.jpg'
+import Reco from "./Reco";
+import a from '../images/reco/cally.jpeg'
+import b from '../images/reco/sarr.jpeg'
 import c from '../images/reco/meni.jpg'
 import d from '../images/reco/cold.jpg'
-import { FaStarHalf, FaStar, FaStarHalfAlt, FaStarAndCrescent} from 'react-icons/fa';
-import { faStarHalfAlt } from '@fortawesome/free-solid-svg-icons';
+import {FaStar, FaStarHalfAlt} from 'react-icons/fa';
 
-export default class ActivitiesList extends Component {
+export default class RecoList extends Component {
         state={
             reco: [
                 {
@@ -18,21 +16,21 @@ export default class ActivitiesList extends Component {
                     stars: [<FaStar/>, <FaStar/>, <FaStar/>, <FaStar/>, <FaStar/>],
                 },
                 {
-                    icon:b,
-                    name:"סארוול",
-                    description:"הבעלים שלי מעולם לא הבינו אותי כמו שצריך. כשפטי הגיעה הרגשתי סופסוף סיכויי לפרוח ולגלות מי עוד אני באמת. סיפרנו צ'יזבאטים לאור ניצוצות הטירוף שבעיניים שלי, והרגשתי שאני באמת באמת פורחת. ארצה גם לציין שפטי מעולם מעולם לא דיווחה על הגופות שנעלמו באותו לילה. פשוט מסרו אותי לאימוץ אחר כך.",
+                    icon:d,
+                    name:"גור",
+                    description:"הייתי מאוד קטן, ופטי הצילה אותי מלהיות קטן.",
                     stars: [<FaStar/>, <FaStar/>, <FaStar/>, <FaStar/>, <FaStar/>],
                 },
                 {
                     icon:c,
-                    name:" מני האפרוח",
+                    name:"מני האפרוח הגבר",
                     description:"לא יודע. אני לא זוכר.",
                     stars: [<FaStarHalfAlt/>, <FaStar/>],
                 },
                 {
-                    icon:d,
-                    name:"גור",
-                    description:"הייתי מאוד קטן, ופטי הצילה אותי מלהיות קטן.",
+                    icon:b,
+                    name:"סארוול",
+                    description:"הבעלים שלי מעולם לא הבינו אותי כמו שצריך. כשפטי הגיעה, הרגשתי סופסוף שאני יכולה להיות מי שאני באמת. סיפרנו צ'יזבאטים לאור ניצוצות הטירוף מהעיניים שלי, והרגשתי שאני באמת באמת פורחת. ארצה לציין גם שפטי מעולם לא דיווחה על הגופות שנעלמו באותו לילה. פשוט מסרו אותי לאימוץ אחר כך.",
                     stars: [<FaStar/>, <FaStar/>, <FaStar/>, <FaStar/>, <FaStar/>],
                 }
             ]
@@ -40,12 +38,11 @@ export default class ActivitiesList extends Component {
         render () {
             return (
                 <section className="recolist">
-
                     <h1>המלצות לבביות</h1>
                     <div className="cats"/>
                     <div className="recolist-center">
-                        {this.state.reco.map(activity => {
-                            return <Activity key={activity.id} activity={activity}/>;
+                        {this.state.reco.map(reco => {
+                            return <Reco key={reco.id} reco={reco}/>;
                         })}
                     </div>
                 </section>

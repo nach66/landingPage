@@ -2,7 +2,7 @@ import React from 'react'
 import Hero from './components/Hero'
 import Beach from './components/Beach'
 import About from './components/About'
-import ActivitiesList from './components/ActivitiesList'
+import RecoList from './components/RecoList'
 import ContactForm from './components/ContactForm'
 import Footer from './components/Footer'
 
@@ -12,7 +12,7 @@ export default function Page() {
             <Hero/>
             <Beach/>
             <About/>
-            <ActivitiesList/>
+            <RecoList/>
             <ContactForm/>
             <Footer/>
         </div>

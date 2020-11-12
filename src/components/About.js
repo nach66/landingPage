@@ -1,5 +1,5 @@
 import React from 'react'
-import {FaPaw, FaShoePrints, FaEnvelope,FaPhone} from 'react-icons/fa';
+import {FaEnvelope,FaPhone} from 'react-icons/fa';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {faThumbsUp, faThumbsDown} from "@fortawesome/free-solid-svg-icons";
 export default function About() {
@@ -15,30 +15,28 @@ export default function About() {
                     <h5><FontAwesomeIcon icon={faThumbsUp} /> לוחשת לכלבים וגם צועקת כשצריך.</h5>
                     <h5><FontAwesomeIcon icon={faThumbsDown} /> מדברת לחשננית כך שיכולה להסתדר גם עם חתולים.</h5>
                     <h5><FontAwesomeIcon icon={faThumbsUp} /> אין ציפור או דג שלא ירגישו בטוחים בקרבתי גם כן, כמובן בקופסא המתאימה.</h5>
-                    <div className="cats"/>
                 </article>
 
                 <article className="blue-sec">                
                     <h5>פנו אל פטי וכל הסידורים שלכם יתגשמו לטובה</h5>
                         
                     <a style={{marginLeft: '45px'}}
-                            href="tel:055-555-5555">
-                            <article style={{display: 'inline-block'}}>
+                        href="tel:055-555-5555">
+                        <article style={{display: 'inline-block'}}>
                                 <FaPhone className="contact-icon"/>
                                 <a>055-555-5555</a>
                             </article>
-                        </a>
-                        
+                    </a>                        
                     <br/>
 
                     <a href={"mailto:nach666@gmail.com"} rel="noopener noreferrer" target="_blank">
-                            <article style={{display: 'inline-block'}}>
+                        <article style={{display: 'inline-block'}}>
                                 <FaEnvelope className="contact-icon"
-                                    style={{color:'var(--primaryColor)'}}/>
+                                    style={{color:'var(--yellow)'}}/>
                                 <a>nach666@gmail.com</a>
                             </article>
-                        </a>
-                        
+                    </a>
+
                     <br/>
                     <br/>
                     <br/>
