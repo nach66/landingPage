@@ -6,9 +6,9 @@ export default function ContactForm() {
 
     return (
         <>
-            <section className="haki-sec">
+            <section className="contact-sec">
                 <article>
-                    <Title title="מעדיפים שאני אחפש אתכם?"/>
+                    <h1>מעדיפים שאני אחפש אתכם?</h1>
                     <FaPaw style={{
                         margin: '2px',
                         fontSize: '20px',
@@ -47,10 +47,8 @@ export default function ContactForm() {
                                             className="form-control long"
                                             rows="11"
                                             placeholder="נשמעת אחלה, דברי איתי"/>
-                            <input 
-                                            type="submit"
-                                            value="שלחו לי"
-                                            className="submit"/>
+                            <button type="submit"
+                                className="submit">שלחו לי</button>
                     </form>
                 </article>
             </section>

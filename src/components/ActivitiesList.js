@@ -39,11 +39,11 @@ export default class ActivitiesList extends Component {
         }
         render () {
             return (
-                <section className="activitylist">
-<br/>
-                    <Title title="המלצות לבביות"/> 
+                <section className="recolist">
+
+                    <h1>המלצות לבביות</h1>
                     <div className="cats"/>
-                    <div className="activitylist-center">
+                    <div className="recolist-center">
                         {this.state.reco.map(activity => {
                             return <Activity key={activity.id} activity={activity}/>;
                         })}

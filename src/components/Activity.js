@@ -12,14 +12,14 @@ export default function Activity({activity}) {
                     }}>
                         <img src={icon} alt="pic"/>
                         <br/>
+                        <br/>
                         <h4>{name}</h4>
                     </article>
                     <article>
                         <p>"{description}"</p>
                         <br/>
                         <div>                            
-                        {s}
-                        {stars}
+                            {stars}
                         </div>
                     </article>
                 </section>

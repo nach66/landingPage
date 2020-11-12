@@ -15,27 +15,30 @@ export default function About() {
                     <h5><FontAwesomeIcon icon={faThumbsUp} /> לוחשת לכלבים וגם צועקת כשצריך.</h5>
                     <h5><FontAwesomeIcon icon={faThumbsDown} /> מדברת לחשננית כך שיכולה להסתדר גם עם חתולים.</h5>
                     <h5><FontAwesomeIcon icon={faThumbsUp} /> אין ציפור או דג שלא ירגישו בטוחים בקרבתי גם כן, כמובן בקופסא המתאימה.</h5>
-            </article>
+                    <div className="cats"/>
+                </article>
 
                 <article className="blue-sec">                
                     <h5>פנו אל פטי וכל הסידורים שלכם יתגשמו לטובה</h5>
-                        <a href="tel:055-555-5555">
+                        
+                    <a style={{marginLeft: '45px'}}
+                            href="tel:055-555-5555">
+                            <article style={{display: 'inline-block'}}>
                                 <FaPhone className="contact-icon"/>
-                                <a style={{
-                                    color: 'var(--myblue)',
-                                    fontSize:'25px'
-                                }}>055-555-5555</a>
-                            </a>
-                        <br/>
-                        <a href={"mailto:nach666@gmail.com"} rel="noopener noreferrer" target="_blank">
-                            <FaEnvelope 
-                                className="contact-icon"
-                                style={{color:'var(--primaryColor)'}}/>
-                            <a style={{
-                                color: 'var(--myblue)',
-                                fontSize:'25px'
-                            }}>nach666@gmail.com</a>
+                                <a>055-555-5555</a>
+                            </article>
                         </a>
+                        
+                    <br/>
+
+                    <a href={"mailto:nach666@gmail.com"} rel="noopener noreferrer" target="_blank">
+                            <article style={{display: 'inline-block'}}>
+                                <FaEnvelope className="contact-icon"
+                                    style={{color:'var(--primaryColor)'}}/>
+                                <a>nach666@gmail.com</a>
+                            </article>
+                        </a>
+                        
                     <br/>
                     <br/>
                     <br/>
