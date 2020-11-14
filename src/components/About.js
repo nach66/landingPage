@@ -11,9 +11,9 @@ export default function About() {
 
                 <article className="pink-sec">
 
-                <ReactWhatsapp number="055-6617145" message="Hello World!!!">f</ReactWhatsapp>
+                <ReactWhatsapp number="+972-556617145" message="Hello World!!!">f</ReactWhatsapp>
 
-                    <a style={{marginLeft: '40px'}}>
+                    <a style={{}}>
                         <article style={{display: 'inline-block'}}>
                             <FaWhatsapp className="contact-icon"
                                 style={{color:'rgb(7, 161, 58)'}}>
@@ -22,7 +22,7 @@ export default function About() {
                         </article>
                     </a>
 
-                    <a style={{marginLeft: '45px'}}
+                    <a style={{alignContent: 'right'}}
                         href="tel:055-555-5555">
                         <article style={{display: 'inline-block'}}>
                                 <FaPhone className="contact-icon"

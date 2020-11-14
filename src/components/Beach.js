@@ -16,7 +16,7 @@ export default function Beach() {
                 </article>
                 <article style={{
                         display:'inline-block',
-                        color:'var(--lightblue)',
+                        color:'var(--mainRed)',
                         marginTop:'-20px'
                     }}>
                     <h1>מאלפת!</h1>
