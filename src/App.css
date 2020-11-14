@@ -233,7 +233,7 @@
 }
 @media screen and (max-width: 450px) {
   .banner h1{
-    font-size: 1.3rem;
+    font-size: 1.6rem;
   }
   .skewed {
     left: 40%;
@@ -245,7 +245,7 @@
     left: 47%;
   }
   .dream1 {
-    left: 56%;
+    left: 66%;
   }
 }
 
@@ -265,7 +265,7 @@
 }
 .pink-sec {
   margin: 25px;
-  padding: 50px;
+  padding: 30px;
   padding-top: 0px;
   color: var(--myblue);
   background: var(--mainWhite);
@@ -308,7 +308,7 @@
     padding-top: 60px;
   }
   .icon-align {
-    margin-right: 5%;
+    margin-right: 15%;
   }
 }
 .about a {
@@ -324,6 +324,9 @@
   background: var(--mainWhite);
   box-shadow: var(--lightShadow);
   border: 2px groove var(--lightblue);
+}
+.icon-align {
+  margin-right: 5%;
 }
 
 

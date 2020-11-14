@@ -21,8 +21,7 @@ export default function About() {
                                 דברו איתי בוואטספ
                         </ReactWhatsapp>
 
-                        <a style={{alignContent: 'right'}}
-                            href="tel:055-555-5555">
+                        <a href="tel:055-555-5555">
                             <article style={{display: 'inline-block',  textDecoration: 'underline'}}>
                                     <FaPhone className="contact-icon"
                                         style={{color:'var(--blue)'}}/>
