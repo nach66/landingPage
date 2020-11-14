@@ -1,33 +1,35 @@
 import React from 'react'
-import {FaEnvelope,FaPhone} from 'react-icons/fa';
+import {FaEnvelope,FaPhone, FaWhatsapp} from 'react-icons/fa';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {faThumbsUp, faThumbsDown} from "@fortawesome/free-solid-svg-icons";
+import ReactWhatsapp from 'react-whatsapp';
+
 export default function About() {
     return (
         <>
             <div className="about">
-    
-                <article className="pink-sec" style={{  textAlign: 'right'}}>
-                    <h3>נעים מאוד, פטי.</h3>
-                    <h5><FontAwesomeIcon icon={faThumbsUp} /> פטסיטרית אחראית ומנוסה.</h5>
-                    <h5><FontAwesomeIcon icon={faThumbsUp} /> שומרת על היצורים האהובים עליכם במצבם הטבעי, ואף משפרת.</h5>
-                    <h5><FontAwesomeIcon icon={faThumbsUp} /> מוציאה לטיולים ומאכילה בממתקים את כל הצדדים הרלוונטיים.</h5>
-                    <h5><FontAwesomeIcon icon={faThumbsUp} /> לוחשת לכלבים וגם צועקת כשצריך.</h5>
-                    <h5><FontAwesomeIcon icon={faThumbsDown} /> מדברת לחשננית כך שיכולה להסתדר גם עם חתולים.</h5>
-                    <h5><FontAwesomeIcon icon={faThumbsUp} /> אין ציפור או דג שלא ירגישו בטוחים בקרבתי גם כן, כמובן בקופסא המתאימה.</h5>
-                </article>
 
-                <article className="blue-sec">                
-                    <h5>פנו אל פטי וכל הסידורים שלכם יתגשמו לטובה</h5>
-                        
+                <article className="pink-sec">
+
+                <ReactWhatsapp number="055-6617145" message="Hello World!!!">f</ReactWhatsapp>
+
+                    <a style={{marginLeft: '40px'}}>
+                        <article style={{display: 'inline-block'}}>
+                            <FaWhatsapp className="contact-icon"
+                                style={{color:'rgb(7, 161, 58)'}}>
+                            </FaWhatsapp>
+                            דברו איתי בוואטספ
+                        </article>
+                    </a>
+
                     <a style={{marginLeft: '45px'}}
                         href="tel:055-555-5555">
                         <article style={{display: 'inline-block'}}>
-                                <FaPhone className="contact-icon"/>
+                                <FaPhone className="contact-icon"
+                                    style={{color:'var(--blue)'}}/>
                                 <a>055-555-5555</a>
                             </article>
                     </a>                        
-                    <br/>
 
                     <a href={"mailto:nach666@gmail.com"} rel="noopener noreferrer" target="_blank">
                         <article style={{display: 'inline-block'}}>
@@ -39,10 +41,18 @@ export default function About() {
 
                     <br/>
                     <br/>
-                    <br/>
-                    <h3>כי גם חיות יכולות לעשות כייף חיים!</h3>   
+                    <h3>כי גם חיות יכולות לעשות כייף חיים!</h3>              
                 </article>
 
+                <article className="white-sec" style={{  textAlign: 'right'}}>
+                    <h3>נעים מאוד, פטי.</h3>
+                    <h5><FontAwesomeIcon icon={faThumbsUp} /> פטסיטרית אחראית ומנוסה.</h5>
+                    <h5><FontAwesomeIcon icon={faThumbsUp} /> שומרת על היצורים האהובים עליכם במצבם הטבעי, ואף משפרת.</h5>
+                    <h5><FontAwesomeIcon icon={faThumbsUp} /> מוציאה לטיולים ומאכילה בממתקים את כל הצדדים הרלוונטיים.</h5>
+                    <h5><FontAwesomeIcon icon={faThumbsUp} /> לוחשת לכלבים וגם צועקת כשצריך.</h5>
+                    <h5><FontAwesomeIcon icon={faThumbsDown} /> מדברת לחשננית כך שיכולה להסתדר גם עם חתולים.</h5>
+                    <h5><FontAwesomeIcon icon={faThumbsUp} /> אין ציפור או דג שלא ירגישו בטוחים בקרבתי גם כן, כמובן בקופסא המתאימה.</h5>
+                </article>
             </div>
         </>
     )

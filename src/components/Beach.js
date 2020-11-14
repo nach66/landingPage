@@ -4,7 +4,7 @@ export default function Beach() {
     return (
         <section className="beach-sec">
             <div className="beach">
-                <h2>או אולי אתם...</h2>
+                <h1>או אולי אתם...</h1>
                     <br/>
                 <h4>בין אם אתם טסים לחופשה חלומית, או דווקא כדי לבקר קרוב משפחה שאתם בקושי סובלים - </h4>
                     <br/>
@@ -16,7 +16,7 @@ export default function Beach() {
                 </article>
                 <article style={{
                         display:'inline-block',
-                        color:'var(--blue)',
+                        color:'var(--lightblue)',
                         marginTop:'-20px'
                     }}>
                     <h1>מאלפת!</h1>

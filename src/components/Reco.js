@@ -10,8 +10,6 @@ export default function Reco({reco}) {
             <section className="reco">
                 <article style={{textAlign: 'center'}}>
                     <img src={icon} alt="pic"/>
-                    <br/>
-                    <br/>
                     <h4>{name}</h4>
                 </article>
 

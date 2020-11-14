@@ -16,6 +16,12 @@ export default class RecoList extends Component {
                     stars: [<FaStar/>, <FaStar/>, <FaStar/>, <FaStar/>, <FaStar/>],
                 },
                 {
+                    icon:b,
+                    name:"סארוול",
+                    description:"הבעלים שלי מעולם לא הבינו אותי כמו שצריך. כשפטי הגיעה, הרגשתי סופסוף שאני יכולה להיות מי שאני באמת. ארצה לציין גם שפטי מעולם לא דיווחה על הגופות שנעלמו באותו לילה. פשוט מסרו אותי לאימוץ אחר כך.",
+                    stars: [<FaStar/>, <FaStar/>, <FaStar/>, <FaStar/>, <FaStar/>],
+                },
+                {
                     icon:d,
                     name:"גור",
                     description:"הייתי מאוד קטן, ופטי הצילה אותי מלהיות קטן.",
@@ -26,12 +32,6 @@ export default class RecoList extends Component {
                     name:"מני האפרוח הגבר",
                     description:"לא יודע. אני לא זוכר.",
                     stars: [<FaStarHalfAlt/>, <FaStar/>],
-                },
-                {
-                    icon:b,
-                    name:"סארוול",
-                    description:"הבעלים שלי מעולם לא הבינו אותי כמו שצריך. כשפטי הגיעה, הרגשתי סופסוף שאני יכולה להיות מי שאני באמת. סיפרנו צ'יזבאטים לאור ניצוצות הטירוף מהעיניים שלי, והרגשתי שאני באמת באמת פורחת. ארצה לציין גם שפטי מעולם לא דיווחה על הגופות שנעלמו באותו לילה. פשוט מסרו אותי לאימוץ אחר כך.",
-                    stars: [<FaStar/>, <FaStar/>, <FaStar/>, <FaStar/>, <FaStar/>],
                 }
             ]
         }

@@ -27,22 +27,17 @@ export default function ContactForm() {
                     <form className="cform" method="POST"
                         action="https://formspree.io/nach666@gmail.com">
                             <input
-                                            type="text"
+                                type="text"
                                             name="firstName"
                                             className="form-control"
                                             placeholder="שם"/>
                             <input
-                                            type="email"
-                                            name="email"
-                                            className="form-control"
-                                            placeholder="אימייל"/>
-                            <input
-                                            type="phone"
+                                type="phone"
                                             name="phone"
                                             className="form-control"
                                             placeholder="מספר טלפון"/>
                             <textarea
-                                            name="message"
+                                name="message"
                                             className="form-control long"
                                             rows="11"
                                             placeholder="נשמעת אחלה, דברי איתי"/>
@@ -50,6 +45,8 @@ export default function ContactForm() {
                                 className="submit">שלחו לי</button>
                     </form>
                 </article>
+                
+                {/* <div className="cicon"/> */}
             </section>
         </>
     );
