@@ -11,37 +11,36 @@ export default function About() {
 
                 <article className="pink-sec">
 
-                <ReactWhatsapp number="+972-556617145" message="Hello World!!!">f</ReactWhatsapp>
+                    <div style={{marginRight: '15%'}}>
+                        <ReactWhatsapp className="wtsp" 
+                            number="+972-556617145" 
+                            style={{textDecoration: 'underline'}}
+                            message="היי, אשמח להתעניין">
+                                <FaWhatsapp 
+                                    className="contact-icon" 
+                                    style={{color:'rgb(7, 161, 58)'}}/>
+                                דברו איתי בוואטספ
+                        </ReactWhatsapp>
 
-                    <a style={{}}>
-                        <article style={{display: 'inline-block'}}>
-                            <FaWhatsapp className="contact-icon"
-                                style={{color:'rgb(7, 161, 58)'}}>
-                            </FaWhatsapp>
-                            דברו איתי בוואטספ
-                        </article>
-                    </a>
+                        <a style={{alignContent: 'right'}}
+                            href="tel:055-555-5555">
+                            <article style={{display: 'inline-block',  textDecoration: 'underline'}}>
+                                    <FaPhone className="contact-icon"
+                                        style={{color:'var(--blue)'}}/>
+                                    <a>055-555-5555</a>
+                                </article>
+                        </a>                        
 
-                    <a style={{alignContent: 'right'}}
-                        href="tel:055-555-5555">
-                        <article style={{display: 'inline-block'}}>
-                                <FaPhone className="contact-icon"
-                                    style={{color:'var(--blue)'}}/>
-                                <a>055-555-5555</a>
-                            </article>
-                    </a>                        
+                        <a href={"mailto:nach666@gmail.com"} rel="noopener noreferrer" target="_blank">
+                            <article style={{display: 'inline-block',  textDecoration: 'underline'}}>
+                                    <FaEnvelope className="contact-icon"
+                                        style={{color:'var(--yellow)'}}/>
+                                    <a>nach666@gmail.com</a>
+                                </article>
+                        </a>
+                    </div>
 
-                    <a href={"mailto:nach666@gmail.com"} rel="noopener noreferrer" target="_blank">
-                        <article style={{display: 'inline-block'}}>
-                                <FaEnvelope className="contact-icon"
-                                    style={{color:'var(--yellow)'}}/>
-                                <a>nach666@gmail.com</a>
-                            </article>
-                    </a>
-
-                    <br/>
-                    <br/>
-                    <h3>כי גם חיות יכולות לעשות כייף חיים!</h3>              
+                    <h3 style={{textAlign: 'center', paddingTop:'30px'}}>כי גם חיות יכולות לעשות כייף חיים!</h3>              
                 </article>
 
                 <article className="white-sec" style={{  textAlign: 'right'}}>

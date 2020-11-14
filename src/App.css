@@ -257,17 +257,30 @@
   bottom: 100px;
 }
 .pink-sec {
-  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
-  border: solid 10px var(--mainRed);
-
   margin: 25px;
-  padding-bottom: 30px;
-  text-align: center;
+  padding-bottom: 35px;
   color: var(--myblue);
   background: var(--mainWhite);
+  border: solid 10px var(--mainRed);
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
   box-shadow: 1px 1px 10px 2px rgba(0, 0, 0, 0.4);
   position: relative;
   bottom: 150px;
+}
+.wtsp{
+  background: var(--mainWhite);
+  color: var(--myblue);
+  margin-top: 4px;
+  font-size: 17px;
+  padding: 30px;
+  padding-right: 0px;
+  height: 1px;
+  border: none;
+  cursor: pointer;
+}
+.wtsp:hover, .g:focus {
+  text-decoration: overline;
+  border: 0px white;
 }
 
 /*2 columns*/
