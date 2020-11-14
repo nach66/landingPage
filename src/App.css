@@ -7,7 +7,7 @@
   --myblue: #063341;
   --blue: #408da7;
   --secblue: #7ee9cd;
-  --verylightblue: #b6fff5cb;
+  --verylightblue: #68fce8be;
   --lightblue: #06D6A0;
   --offwhite: #C1E7AE;
   --primaryColor: #FFD166;
@@ -229,43 +229,39 @@
   .banner h1{
     padding-left: 10px;
     padding-top: 40px;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
 }
 @media screen and (max-width: 450px) {
   .banner h1{
-    font-size: 1rem;
+    font-size: 1.6rem;
   }
 }
 
 /* sections */
 .beach-sec {
   padding: 2rem;
-  padding-top: 3rem;
+  padding-top: 3.5rem;
   text-align: center;
   color: var(--myblue);
   background:var(--primaryColor);
   box-shadow: var(--darkShadow);
-  padding-bottom: 170px;
 }
 .white-sec {
-  padding-right: 30px;
-  padding-left: 30px;
-  margin-left: 0px;
+  padding: 50px;
+  padding-top: 20px;
   color: var(--myblue);
-  position: relative;
-  bottom: 100px;
 }
 .pink-sec {
   margin: 25px;
-  padding-bottom: 35px;
+  padding: 50px;
+  padding-top: 0px;
   color: var(--myblue);
   background: var(--mainWhite);
   border: solid 10px var(--mainRed);
   border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
   box-shadow: 1px 1px 10px 2px rgba(0, 0, 0, 0.4);
-  position: relative;
-  bottom: 150px;
+
 }
 .wtsp{
   background: var(--mainWhite);
@@ -283,38 +279,26 @@
   border: 0px white;
 }
 
-/*2 columns*/
+/*2 columns - /*about*/
 .about {
   margin: auto;
   display: grid;
-  background: var(--mainWhite);
-  box-shadow: var(--lightShadow);
+  background: linear-gradient(to bottom, var(--primaryColor) 24%,white 27%);
+  box-shadow: none;
+  border-bottom: 3px groove var(--primaryColor);
 }
 @media screen and (min-width: 1150px) {
-  .white-sec, .pink-sec, .about {
-    bottom: 0px;
-  }
   .about {
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
     grid-template-columns: 3fr 4fr;
+    background: var(--mainWhite);
   }
   .white-sec {
-    padding-top: 30px;
+    padding-top: 60px;
   }
-  .beach-sec {
-    padding-bottom: 30px;
+  .icon-align {
+    margin-right: 5%;
   }
-}
-/*about*/
-.about h5 {
-  line-height: 2;
-  letter-spacing: 2px;
-  font-weight: 500;
-  font-size: 18px;
-}
-.about h3 {
-  line-height: 2;
-  letter-spacing: 2px;
-  font-weight: 600;
 }
 .about a {
   color: var(--myblue);
@@ -330,6 +314,7 @@
   box-shadow: var(--lightShadow);
   border: 2px groove var(--lightblue);
 }
+
 
 /* recolist */
 .recolist{
@@ -466,25 +451,36 @@
 /*כותרות*/
 h1 {
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.9rem;
   direction: rtl;
-  line-height: 1;
-  margin-bottom: 0.5em;
+  line-height: 1.1;
+  margin-bottom: 0.3em;
   letter-spacing: var(--mainSpacing);
+}
+/*about*/
+h3 {
+  line-height: 2;
+  letter-spacing: 2px;
+  font-weight: 600;
 }
 /*בין אם אתם טסים*/
 h4 {
   font-size: 1.2em;
   direction: rtl;
-  line-height: 1;
+  line-height: 1.5;
   margin-bottom: 0.5em;
+}
+/*about*/
+h5 {
+  line-height: 2;
+  letter-spacing: 2px;
+  font-weight: 500;
+  font-size: 18px;
 }
 div{
   direction: rtl;
 }
 /* end of globals */
-
-
 
 /*popup*/
 @keyframes customEnterAnimation {

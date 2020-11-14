@@ -10,8 +10,7 @@ export default function About() {
             <div className="about">
 
                 <article className="pink-sec">
-
-                    <div style={{marginRight: '15%'}}>
+                    <div className="icon-align">
                         <ReactWhatsapp className="wtsp" 
                             number="+972-556617145" 
                             style={{textDecoration: 'underline'}}
@@ -38,9 +37,9 @@ export default function About() {
                                     <a>nach666@gmail.com</a>
                                 </article>
                         </a>
-                    </div>
 
-                    <h3 style={{textAlign: 'center', paddingTop:'30px'}}>כי גם חיות יכולות לעשות כייף חיים!</h3>              
+                    </div>
+                    <h3 style={{textAlign: 'center', paddingTop:'30px'}}>כי גם חיות יכולות לעשות כיף חיים!</h3>              
                 </article>
 
                 <article className="white-sec" style={{  textAlign: 'right'}}>

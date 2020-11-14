@@ -5,9 +5,7 @@ export default function Beach() {
         <section className="beach-sec">
             <div className="beach">
                 <h1>או אולי אתם...</h1>
-                    <br/>
                 <h4>בין אם אתם טסים לחופשה חלומית, או דווקא כדי לבקר קרוב משפחה שאתם בקושי סובלים - </h4>
-                    <br/>
                 <article style={{
                         display:'inline-block',
                         marginLeft: '12px'
@@ -17,7 +15,7 @@ export default function Beach() {
                 <article style={{
                         display:'inline-block',
                         color:'var(--mainRed)',
-                        marginTop:'-20px'
+                        marginTop:'-8px'
                     }}>
                     <h1>מאלפת!</h1>
                 </article>
