@@ -422,6 +422,8 @@
   }
 }
 .cform input{
+  border: 2px;
+  border-radius: 3px;
   color: var(--mainBlack);
   background-color: var(--verylightblue);
 }
@@ -441,6 +443,7 @@
   background-position: top;
   background-size: cover;
   background-repeat: no-repeat;
+  border: 2px;
 }
 .submit{
   width: 90%;
