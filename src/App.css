@@ -233,7 +233,7 @@
 }
 @media screen and (max-width: 450px) {
   .banner h1{
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
   .skewed {
     left: 40%;
@@ -298,6 +298,9 @@
   box-shadow: none;
   border-bottom: 3px groove var(--primaryColor);
 }
+.icon-align {
+  margin-right: 7%;
+}
 @media screen and (min-width: 1150px) {
   .about {
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
@@ -324,9 +327,6 @@
   background: var(--mainWhite);
   box-shadow: var(--lightShadow);
   border: 2px groove var(--lightblue);
-}
-.icon-align {
-  margin-right: 8%;
 }
 
 
@@ -474,7 +474,7 @@ h1 {
 /*about*/
 h3 {
   line-height: 2;
-  letter-spacing: 4px;
+  letter-spacing: 3px;
   font-weight: 600;
   font-size: 20px;
 }
