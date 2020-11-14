@@ -294,15 +294,12 @@
 .about {
   margin: auto;
   display: grid;
-  background: linear-gradient(to bottom, var(--primaryColor) 19%,white 24%);
+  background: linear-gradient(to bottom, var(--primaryColor) 17%,white 22%);
   box-shadow: none;
   border-bottom: 3px groove var(--primaryColor);
 }
-.icon-align {
-  margin-right: 3%;
-}
 @media screen and (min-width: 1150px) {
-  .about {
+    .about {
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
     grid-template-columns: 3fr 4fr;
     background: var(--mainWhite);
@@ -310,10 +307,8 @@
   .white-sec {
     padding-top: 60px;
   }
-  .icon-align {
-    margin-right: 15%;
-  }
 }
+
 .about a {
   color: var(--myblue);
   font-size: 17px;
@@ -327,6 +322,14 @@
   background: var(--mainWhite);
   box-shadow: var(--lightShadow);
   border: 2px groove var(--lightblue);
+}
+.icon-align {
+  margin-right: 11%;
+}
+@media screen and (max-width: 500px) {
+  .icon-align {
+    margin-right: 2%;
+  }
 }
 
 
