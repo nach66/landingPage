@@ -299,7 +299,7 @@
   border-bottom: 3px groove var(--primaryColor);
 }
 .icon-align {
-  margin-right: 6%;
+  margin-right: 3%;
 }
 @media screen and (min-width: 1150px) {
   .about {
