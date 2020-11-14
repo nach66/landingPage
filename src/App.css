@@ -294,7 +294,7 @@
 .about {
   margin: auto;
   display: grid;
-  background: linear-gradient(to bottom, var(--primaryColor) 21%,white 24%);
+  background: linear-gradient(to bottom, var(--primaryColor) 19%,white 24%);
   box-shadow: none;
   border-bottom: 3px groove var(--primaryColor);
 }
