@@ -242,7 +242,7 @@
     width: 40%;
   }
   .dream1 {
-    left: 47%;
+    left: 52%;
   }
   .dream2 {
     left: 66%;
@@ -265,7 +265,7 @@
 }
 .pink-sec {
   margin: 25px;
-  padding: 20px;
+  padding: 10px;
   padding-top: 0px;
   color: var(--myblue);
   background: var(--mainWhite);
@@ -413,7 +413,7 @@
 }
 .cform{
   margin: auto;
-  width: 60vw;
+  width: 65vw;
 }
 @media screen and (max-width: 750px) {
   .cform{
