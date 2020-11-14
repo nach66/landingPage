@@ -8,13 +8,13 @@ import Footer from './components/Footer'
 
 export default function Page() {
     return (
-        <div>
+        <>
             <Hero/>
             <Beach/>
             <About/>
             <RecoList/>
             <ContactForm/>
             <Footer/>
-        </div>
+        </>
     )
 }
