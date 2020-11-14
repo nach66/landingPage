@@ -224,16 +224,9 @@
     height: 20px;
   }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 520px) {
   .banner h1{
-    padding-left: 10px;
-    padding-top: 40px;
-    font-size: 1.5rem;
-  }
-}
-@media screen and (max-width: 450px) {
-  .banner h1{
-    font-size: 1.5rem;
+    font-size: 1.9rem;
   }
   .skewed {
     left: 40%;
@@ -246,6 +239,11 @@
   }
   .dream2 {
     left: 66%;
+  }
+}
+@media screen and (max-width: 450px) {
+  .banner h1{
+    font-size: 1.5rem;
   }
 }
 
