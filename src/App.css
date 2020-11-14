@@ -233,7 +233,7 @@
 }
 @media screen and (max-width: 450px) {
   .banner h1{
-    font-size: 1.6rem;
+    font-size: 2rem;
   }
   .skewed {
     left: 40%;
