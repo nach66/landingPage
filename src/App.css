@@ -244,7 +244,7 @@
   .dream1 {
     left: 47%;
   }
-  .dream1 {
+  .dream2 {
     left: 66%;
   }
 }
@@ -265,7 +265,7 @@
 }
 .pink-sec {
   margin: 25px;
-  padding: 30px;
+  padding: 20px;
   padding-top: 0px;
   color: var(--myblue);
   background: var(--mainWhite);
@@ -326,7 +326,7 @@
   border: 2px groove var(--lightblue);
 }
 .icon-align {
-  margin-right: 5%;
+  margin-right: 8%;
 }
 
 
@@ -474,8 +474,9 @@ h1 {
 /*about*/
 h3 {
   line-height: 2;
-  letter-spacing: 2px;
+  letter-spacing: 4px;
   font-weight: 600;
+  font-size: 20px;
 }
 /*בין אם אתם טסים*/
 h4 {
