@@ -294,12 +294,12 @@
 .about {
   margin: auto;
   display: grid;
-  background: linear-gradient(to bottom, var(--primaryColor) 24%,white 27%);
+  background: linear-gradient(to bottom, var(--primaryColor) 24%,white 25%);
   box-shadow: none;
   border-bottom: 3px groove var(--primaryColor);
 }
 .icon-align {
-  margin-right: 7%;
+  margin-right: 6%;
 }
 @media screen and (min-width: 1150px) {
   .about {
