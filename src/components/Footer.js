@@ -7,11 +7,12 @@ export default class Footer extends Component {
             <>
                 <FooterWrapper>
                     <div className="container py-3">
-                        <p style={{
-                            textTransform: 'capitalize',
-                            direction:'ltr'}}>
+                    <a className="footer"
+                            rel="noopener noreferrer" target={"_blank"} 
+                            href='https://portifolti.netlify.app/'
+                        >
                             {new Date().getFullYear()} &copy; by nachala vinograd
-                        </p>
+                        </a>
                     </div>
                 </FooterWrapper>
             </>
@@ -20,10 +21,9 @@ export default class Footer extends Component {
 }
 
 const FooterWrapper = styled.footer`
-    color: var(--mainRed);
     background: var(--secblue);
     height: 40px;
     padding-top: 20px;
-    text-align:center;
     font-weight:bold;
+    text-align:center;
     `;

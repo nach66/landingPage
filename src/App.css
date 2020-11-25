@@ -21,6 +21,17 @@
   --darkShadow: 4px 10px 5px 0px rgba(0, 0, 0, 0.5);
 }
 
+.footer {
+  color: var(--mainRed);
+  text-decoration: none;
+  text-transform: capitalize;
+  direction: ltr;
+  padding: 10px;
+}
+.footer:hover {
+  text-decoration: underline;
+}
+
 /*הים הטיפשי*/
 .spikes {
   position: relative;
@@ -124,7 +135,7 @@
 .bout{
   position: absolute;
   top:320px;
-  left: 240px;
+  left: 250px;
   z-index: 1;
   width: 280px;
   height: 260px;
@@ -149,7 +160,7 @@
   }
   .bout{
     top:222px;
-    left: 20px;
+    left: 40px;
     width: 183px;
     height: 170px;
     background-image: url("./images/icons/sbo.png");

@@ -5,7 +5,6 @@ import About from './components/About'
 import RecoList from './components/RecoList'
 import ContactForm from './components/ContactForm'
 import Footer from './components/Footer'
-import { Modal } from "react-responsive-modal";
 
 export default function Page () {
     return (
