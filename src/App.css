@@ -26,7 +26,6 @@
   text-decoration: none;
   text-transform: capitalize;
   direction: ltr;
-  padding: 10px;
 }
 .footer:hover {
   text-decoration: underline;
@@ -307,7 +306,7 @@
 .about {
   margin: auto;
   display: grid;
-  background: linear-gradient(to bottom, var(--primaryColor) 17%,white 22%);
+  background: linear-gradient(to bottom, var(--primaryColor) 22%,white 24%);
   box-shadow: none;
   border-bottom: 3px groove var(--primaryColor);
 }
