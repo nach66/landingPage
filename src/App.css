@@ -57,7 +57,7 @@
 .blue-spikes {
   position: relative;
   background: var(--myblue);
-  height: 2.5vh;
+  height: 1.2vh;
   z-index: 1;
 }
 .blue-spikes::after {
@@ -71,15 +71,15 @@
   height: 45px;
   background-size: 40px 100%;
   background-image: 
-  linear-gradient(25deg, var(--myblue) 25%, transparent 33%),
-  linear-gradient(335deg, var(--myblue) 25%, transparent 33%);
+  linear-gradient(20deg, var(--myblue) 25%, transparent 33%),
+  linear-gradient(340deg, var(--myblue) 25%, transparent 33%);
   background-position: 0 0;
 }
 
 .light-spikes {
   position: relative;
   background: var(--primaryColor);
-  height: 0.6vh;
+  height: 0.1vh;
   z-index: 0;
 
 }
@@ -102,7 +102,7 @@
 .first-spikes {
   position: relative;
   background: var(--primaryColor);
-  height: 1.4vh;
+  height: 1.2vh;
   z-index: 0;
 }
 .first-spikes::after {
@@ -134,14 +134,15 @@
 }
 .bout{
   position: absolute;
-  top:320px;
-  left: 250px;
+  top:315px;
+  left: 235px;
   z-index: 1;
   width: 280px;
-  height: 260px;
+  height: 200px;
+  background-size: contain;
   background-position: center;
-  background-image: url("./images/icons/bo.png");
-  margin: 1rem auto;
+  background: url("./images/icons/bo.png") no-repeat;
+  margin: 1rem;
 }
 .skewed {
   top: 1px;
@@ -159,11 +160,12 @@
     height: 300px;
   }
   .bout{
-    top:222px;
-    left: 40px;
-    width: 183px;
-    height: 170px;
-    background-image: url("./images/icons/sbo.png");
+    top:215px;
+    left: 25px;
+    width: 190px;
+    height: 80px;
+    background-size: contain;
+    background: url("./images/icons/sbo.png") no-repeat;
   }
 }
 
@@ -237,7 +239,9 @@
 }
 @media screen and (max-width: 520px) {
   .banner h1{
+    padding-top: 50px;
     font-size: 1.9rem;
+    line-height: 0;
   }
   .skewed {
     left: 40%;

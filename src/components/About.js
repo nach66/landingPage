@@ -25,7 +25,7 @@ export default function About() {
                             <article style={{display: 'inline-block',  textDecoration: 'underline'}}>
                                     <FaPhone className="contact-icon"
                                         style={{color:'var(--blue)'}}/>
-                                    <a>055-555-5555</a>
+                                    <a href="tel:055-555-5555">055-555-5555</a>
                                 </article>
                         </a>                        
 
@@ -33,7 +33,7 @@ export default function About() {
                             <article style={{display: 'inline-block',  textDecoration: 'underline'}}>
                                     <FaEnvelope className="contact-icon"
                                         style={{color:'var(--yellow)'}}/>
-                                    <a>nach666@gmail.com</a>
+                                    <a href={"mailto:nach666@gmail.com"} rel="noopener noreferrer" target="_blank">nach666@gmail.com</a>
                                 </article>
                         </a>
 
