@@ -12,7 +12,7 @@
   --offwhite: #C1E7AE;
   --primaryColor: #FFD166;
   --yellow: #F5B429;
-  --mainRed: rgb(243, 106, 109);
+  --mainRed: #063341;
   --mainWhite: #fff;
   --mainBlack: #222;
   --mainSpacing: 3px;
@@ -22,7 +22,7 @@
 }
 
 .footer {
-  color: var(--mainRed);
+  color: var(--yellow);
   text-decoration: none;
   text-transform: capitalize;
   direction: ltr;
